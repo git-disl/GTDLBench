@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Comparison of DL Frameworks on GTDLBench</title>
-    <link>https://YanzhaoWu.github.io/GTDLBench/comparison/</link>
+    <link>http://YanzhaoWu.github.io/GTDLBench/comparison/</link>
     <description>Recent content in Comparison of DL Frameworks on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://YanzhaoWu.github.io/GTDLBench/comparison/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://YanzhaoWu.github.io/GTDLBench/comparison/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Comparison on MNIST</title>
-      <link>https://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/</link>
+      <link>http://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/</guid>
+      <guid>http://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/</guid>
       <description>The benchmarking results are as following figure shows:
-      google.charts.load(&#39;visualization&#39;, &#39;1&#39;, {&#39;package&#39;:[&#39;corechart&#39;, &#39;controls&#39;]}); function drawChart() { $.get(&#34;https:\/\/YanzhaoWu.github.io\/GTDLBench\/data\/MNISTServer1.csv&#34;, function(csvString) { var tmpData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScala}); var arrayData = []; var arrayData1 = []; var arrayData2 = []; for (var i = 0; i  </description>
+      google.charts.load(&#39;visualization&#39;, &#39;1&#39;, {&#39;package&#39;:[&#39;corechart&#39;, &#39;controls&#39;]}); function drawChart() { $.get(&#34;http:\/\/YanzhaoWu.github.io\/GTDLBench\/data\/MNISTServer1.csv&#34;, function(csvString) { var tmpData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScala}); var arrayData = []; var arrayData1 = []; var arrayData2 = []; for (var i = 0; i  </description>
     </item>
     
     <item>
       <title>Comparison on CIFAR-10</title>
-      <link>https://YanzhaoWu.github.io/GTDLBench/comparison/cifar10_comparison/</link>
+      <link>http://YanzhaoWu.github.io/GTDLBench/comparison/cifar10_comparison/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://YanzhaoWu.github.io/GTDLBench/comparison/cifar10_comparison/</guid>
+      <guid>http://YanzhaoWu.github.io/GTDLBench/comparison/cifar10_comparison/</guid>
       <description>The benchmarking results are as following figure shows:
-      google.charts.load(&#39;visualization&#39;, &#39;1&#39;, {&#39;package&#39;:[&#39;corechart&#39;, &#39;controls&#39;]}); function drawChart() { $.get(&#34;https:\/\/YanzhaoWu.github.io\/GTDLBench\/data\/CIFAR10Server1.csv&#34;, function(csvString) { var tmpData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScala}); var arrayData = []; var arrayData1 = []; var arrayData2 = []; for (var i = 0; i  </description>
+      google.charts.load(&#39;visualization&#39;, &#39;1&#39;, {&#39;package&#39;:[&#39;corechart&#39;, &#39;controls&#39;]}); function drawChart() { $.get(&#34;http:\/\/YanzhaoWu.github.io\/GTDLBench\/data\/CIFAR10Server1.csv&#34;, function(csvString) { var tmpData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScala}); var arrayData = []; var arrayData1 = []; var arrayData2 = []; for (var i = 0; i  </description>
     </item>
     
   </channel>

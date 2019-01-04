@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dataset Used on GTDLBench</title>
-    <link>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/</link>
+    <link>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/</link>
     <description>Recent content in Dataset Used on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MNIST</title>
-      <link>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</link>
+      <link>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</guid>
+      <guid>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</guid>
       <description>Benchmarking on MNIST: The following mentioned model definition files are under the folder: models/mnist/ .
 Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;  TensorFlow: TensorFlow uses a variant of LeNet and its network structure is shown as follows:   TensorFlow default model   Run TensorFlow with its default MNIST setting:
 cd $DLBENCH_ROOT/models/mnist/tensorflow/ python mnist_deep.py  The Training Time, Testing Time and Accuracy will appear after completion.</description>
@@ -23,10 +23,10 @@ cd $DLBENCH_ROOT/models/mnist/tensorflow/ python mnist_deep.py  The Training Tim
     
     <item>
       <title>CIFAR-10</title>
-      <link>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</link>
+      <link>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</guid>
+      <guid>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</guid>
       <description>Benchmarking on CIFAR-10: The following mentioned model definition files are under the folder: models/cifar10/ .
 Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;  TensorFlow: Run TensorFlow with its default MNIST setting:
 cd $DLBENCH_ROOT/models/cifar10/tensorflow/ python cifar10_train.py &amp;gt; train_log.txt 2&amp;gt;&amp;amp;1  After the completion of training, run the following command to test the tranined model:
@@ -35,10 +35,10 @@ python cifar10_eval.py &amp;gt; test_log.txt 2&amp;gt;&amp;amp;1  The Accuracy w
     
     <item>
       <title>CIFAR-100</title>
-      <link>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/</link>
+      <link>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/</guid>
+      <guid>http://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/</guid>
       <description>Benchmarking on CIFAR-100: The following mentioned model definition files are under the folder: models/cifar100/ .
 Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;  TensorFlow: Run TensorFlow with its default MNIST setting:
 cd $DLBENCH_ROOT/models/cifar100/tensorflow/ python cifar100_train.py &amp;gt; train_log.txt 2&amp;gt;&amp;amp;1  After the completion of training, run the following command to test the tranined model:
