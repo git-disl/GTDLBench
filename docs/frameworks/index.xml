@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frameworks on GTDLBench</title>
-    <link>http://YanzhaoWu.github.io/GTDLBench/frameworks/</link>
+    <link>/GTDLBench/frameworks/</link>
     <description>Recent content in Frameworks on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://YanzhaoWu.github.io/GTDLBench/frameworks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/GTDLBench/frameworks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/frameworks/caffe/</link>
+      <link>/GTDLBench/frameworks/caffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/frameworks/caffe/</guid>
+      <guid>/GTDLBench/frameworks/caffe/</guid>
       <description> Caffe The statistical info of Caffe is shown as follows:
  678 text files. 677 unique files.
  282 files ignored.  CLOC v 1.60 T=2.68 s (162.6 files/s, 36000.4 lines/s)    Language files blank comment code     C++ 188 4726 4888 41803   C/C++ Header 106 3341 7438 18325   Python 38 1431 3026 5232   CMake 33 435 476 1957   MATLAB 22 94 205 627   Bourne Shell 40 166 159 589   make 1 92 107 500   CSS 3 71 8 359   HTML 2 19 8 173   YAML 2 11 20 43   SUM: 435 10386 16335 69608    </description>
@@ -23,10 +23,10 @@
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/frameworks/mxnet/</link>
+      <link>/GTDLBench/frameworks/mxnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/frameworks/mxnet/</guid>
+      <guid>/GTDLBench/frameworks/mxnet/</guid>
       <description>2116 text files.
 2088 unique files.
 705 files ignored.
@@ -36,30 +36,30 @@ cloc v 1.60 T=4.60 s (317.1 files/s, 71521.2 lines/s)
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/frameworks/tensorflow/</link>
+      <link>/GTDLBench/frameworks/tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/frameworks/tensorflow/</guid>
+      <guid>/GTDLBench/frameworks/tensorflow/</guid>
       <description>LOC 0.4.1
    Language Files Lines Blank Comment Code     Python 2309 729862 109417 65993 554452   C++ 2581 696781 90510 80917 525354   C/C++ Header 1372 209403 33251 57547 118605   Markdown 263 47881 10571 0 37310   Go 29 31742 1882 14027 15833   Java 85 16319 2209 3948 10162   Bourne Shell 112 11554 1595 3440 6519   Protobuf 94 9206 1463 3686 4057   Plain Text 41 3716 251 0 3465   Objective-C++ 18 2709 389 321 1999   C 9 1320 169 141 1010   Makefile 10 1407 178 266 963   XML 45 1429 253 445 731   Batch 10 276 57 0 219   Perl 2 227 36 41 150   JSON 4 126 0 0 126    LinkerScript 8 64 4 0 60   Objective-C 2 88 20 26 42   YAML 1 42 3 24 15   Autoconf 1 13 0 0 13   Total 6996 1764165 252258 230822 1281085    </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/frameworks/theano/</link>
+      <link>/GTDLBench/frameworks/theano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/frameworks/theano/</guid>
+      <guid>/GTDLBench/frameworks/theano/</guid>
       <description>LOC
 Language Files Lines Blank Comment Code Python 380 216122 34663 18566 162893 Plain Text 189 35241 9147 0 26094 C 51 26012 1903 5110 18999 TeX 4 3317 415 286 2616 JavaScript 10 2044 220 296 1528 HTML 4 404 32 0 372 CUDA 2 451 59 100 292 CUDA Header 1 433 84 75 274 CSS 4 254 40 0 214 C/C++ Header 5 141 25 25 91 YAML 1 66 6 0 60 reStructuredText 1 50 15 0 35 Batch 1 43 8 0 35 Makefile 3 35 9 3 23 Autoconf 1 15 0 0 15 Bourne Shell 1 21 4 2 15</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/frameworks/torch/</link>
+      <link>/GTDLBench/frameworks/torch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/frameworks/torch/</guid>
+      <guid>/GTDLBench/frameworks/torch/</guid>
       <description>166 text files. 166 unique files.
 66 files ignored.
 [CLOC]()http://cloc.sourceforge.net) v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Datasets on GTDLBench</title>
-    <link>http://YanzhaoWu.github.io/GTDLBench/datasets/</link>
+    <link>/GTDLBench/datasets/</link>
     <description>Recent content in Datasets on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://YanzhaoWu.github.io/GTDLBench/datasets/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/GTDLBench/datasets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MNIST</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/mnist_datasets/</link>
+      <link>/GTDLBench/datasets/mnist_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/mnist_datasets/</guid>
+      <guid>/GTDLBench/datasets/mnist_datasets/</guid>
       <description>MNIST Dataset The MNIST database of handwritten digits
 Download Raw Dataset
 Dataset Statistics  Color: Grey-scale Sample Size: 28x28  The number of categories of MNIST is 10, that is 0-9, 10 digits.
@@ -24,10 +24,10 @@ The Number of Samples per Category for MNIST    Category 0 1 2 3 4 5 6 7 8 9 Tot
     
     <item>
       <title>CIFAR-10</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/cifar-10_datasets/</link>
+      <link>/GTDLBench/datasets/cifar-10_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/cifar-10_datasets/</guid>
+      <guid>/GTDLBench/datasets/cifar-10_datasets/</guid>
       <description>CIFAR-10 dataset The CIFAR-10 dataset
 Dataset Statistics  Color: RGB Sample Size: 32x32  The number of categories of CIFAR-10 is 10, that is airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
 The Number of Samples per Category for CIFAR-10    Category airplane automobile bird cat deer dog frog horse ship truck Total     #Training Samples 5,000 5,000 5,000 5,000 5,000 5,000 5,000 5,000 5,000 50,000    #Testing Samples 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000 10,000    Samples Dataset Usage TensorFlow: TensorFlow @TensorFlow_Convolutional_Neural_Networks</description>
@@ -35,30 +35,30 @@ The Number of Samples per Category for CIFAR-10    Category airplane automobile 
     
     <item>
       <title>CIFAR-100</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/cifar-100_datasets/</link>
+      <link>/GTDLBench/datasets/cifar-100_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/cifar-100_datasets/</guid>
+      <guid>/GTDLBench/datasets/cifar-100_datasets/</guid>
       <description>CIFAR-100 dataset The CIFAR-100 dataset
 Dataset Statistics  Color: RGB Sample Size: 32x32  This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are roughly grouped into 20 superclasses. Each image comes with a &amp;ldquo;fine&amp;rdquo; label (the class to which it belongs) and a &amp;ldquo;coarse&amp;rdquo; label (the superclass to which it belongs).</description>
     </item>
     
     <item>
       <title>Faces (AT&amp;T)</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/att_face_dataset/</link>
+      <link>/GTDLBench/datasets/att_face_dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/att_face_dataset/</guid>
+      <guid>/GTDLBench/datasets/att_face_dataset/</guid>
       <description>The Database of Faces (AT&amp;amp;T) The Database of Faces
 Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset Size: 4.5 MB (compressed in .tar.z)  The original files are in PGM format, and can conveniently be viewed on UNIX &amp;trade; systems using the &amp;lsquo;xv&amp;rsquo; program. The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40 directories (one for each subject), which have names of the form sX, where X indicates the subject number (between 1 and 40).</description>
     </item>
     
     <item>
       <title>CALTECH101</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/caltech101_datasets/</link>
+      <link>/GTDLBench/datasets/caltech101_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/caltech101_datasets/</guid>
+      <guid>/GTDLBench/datasets/caltech101_datasets/</guid>
       <description>CALTECH101 The CALTECH101 dataset
 Caltech-101 contains a total of 9,146 images, split between 101 distinct object categories (faces, watches, ants, pianos, etc.) and a background category. This dataset contains 102 folders, the BACKGROUND_Google (the background category) can be removed, and users may use the left 101 categoies.
 Dataset Statistics  Color: RGB Sample size: Roughtly 300x200 Dataset size: 1.2 GB  Overall, the dataset consists of pictures of objects belonging to 101 categories.</description>
@@ -66,20 +66,20 @@ Dataset Statistics  Color: RGB Sample size: Roughtly 300x200 Dataset size: 1.2 G
     
     <item>
       <title>CALTECH256</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/caltech256_datasets/</link>
+      <link>/GTDLBench/datasets/caltech256_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/caltech256_datasets/</guid>
+      <guid>/GTDLBench/datasets/caltech256_datasets/</guid>
       <description>CALTECH256 The CALTECH256 dataset
 Dataset Statistics  Color: RGB Sample Size:  Camprison with Caltech-101: The Number of Samples per Category for Caltech-256 Samples Dataset Usage TensorFlow: Git clone https://github.com/yukunchen113/ResnetCNN.git cd RestNetCNN   Use caltech256_bin.py to convet caltech256 images to tfrecord files for faster reading. Use caltech256_input.py input functions to convert input iput functions to batch images and labels. Model.py contains resnet model. Train.py trains the model Evals.py evaluates the model.</description>
     </item>
     
     <item>
       <title>ImageNet</title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/imagenet/</link>
+      <link>/GTDLBench/datasets/imagenet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/imagenet/</guid>
+      <guid>/GTDLBench/datasets/imagenet/</guid>
       <description>IMAGENET The IMAGENET dataset
 ImageNet is a dataset of images that are organized according to the WordNet hierarchy. WordNet contains approximately 100,000 phrases and ImageNet has provided around 1000 images on average to illustrate each phrase.
 Dataset Statistics Size 150 GB Number of Records: Total number of images: ~1,500,000; each with multiple bounding boxes and respective class labels
@@ -88,10 +88,10 @@ Dataset Statistics Size 150 GB Number of Records: Total number of images: ~1,500
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/audioset_dataset/</link>
+      <link>/GTDLBench/datasets/audioset_dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/audioset_dataset/</guid>
+      <guid>/GTDLBench/datasets/audioset_dataset/</guid>
       <description>AudioSet The AudioSet dataset
 The AudioSet dataset is a large-scale collection of human-labeled 10-second sound clips drawn from YouTube videos. There are 2,084,320 YouTube videos containing 527 labels.
 Dataset Statistics Reference paper https://research.google.com/pubs/pub45857.html
@@ -102,20 +102,20 @@ Text (csv) files describing, for each segment, the YouTube video ID, start time,
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/celeba_dataset/</link>
+      <link>/GTDLBench/datasets/celeba_dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/celeba_dataset/</guid>
+      <guid>/GTDLBench/datasets/celeba_dataset/</guid>
       <description>Large-scale CelebFaces Attributes (CelebA) Dataset The CelebA dataset
 CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes dataset with more than 200K celebrity images, each with 40 attribute annotations. The images in this dataset cover large pose variations and background clutter. CelebA has large diversities, large quantities, and rich annotations. The dataset can be employed as the training and test sets for the following computer vision tasks: face attribute recognition, face detection, and landmark (or facial part) localization.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/kinetics_datasets/</link>
+      <link>/GTDLBench/datasets/kinetics_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/kinetics_datasets/</guid>
+      <guid>/GTDLBench/datasets/kinetics_datasets/</guid>
       <description>Kinetics The Kinetics dataset
 Kinetics is a large-scale, high-quality dataset of YouTube video URLs which include a diverse range of human focused actions
 Statistics The dataset consists of approximately 300,000 video clips, and covers 400 human action classes with at least 400 video clips for each action class. Each clip lasts around 10s and is labeled with a single class. All of the clips have been through multiple rounds of human annotation, and each is taken from a unique YouTube video.</description>
@@ -123,10 +123,10 @@ Statistics The dataset consists of approximately 300,000 video clips, and covers
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/lisa_traffic_sign_dataset/</link>
+      <link>/GTDLBench/datasets/lisa_traffic_sign_dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/lisa_traffic_sign_dataset/</guid>
+      <guid>/GTDLBench/datasets/lisa_traffic_sign_dataset/</guid>
       <description>LISA Traffic Sign Dataset The LISA_Traffic_Sign Dataset
 The LISA Traffic Sign Dataset is a set of videos and annotated frames containing US traffic signs. It is released in two stages, one with only the pictures and one with both pictures and videos. The images are available now, while the full dataset is underway and will be made available soon.
 Dataset Statistics  47 US sign types 7855 annotations on 6610 frames.</description>
@@ -134,10 +134,10 @@ Dataset Statistics  47 US sign types 7855 annotations on 6610 frames.</descripti
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/vqa_datasets/</link>
+      <link>/GTDLBench/datasets/vqa_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/vqa_datasets/</guid>
+      <guid>/GTDLBench/datasets/vqa_datasets/</guid>
       <description>VISUAL QA The VQA dataset
 VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer.
 Dataset Statistics 265,016 images (COCO and abstract scenes) 1,105,904 questions 11,059,040 ground truth answers
@@ -146,20 +146,20 @@ At least 3 questions (5.4 questions on average) per image 10 ground truth answer
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/coil100_datasets/</link>
+      <link>/GTDLBench/datasets/coil100_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/coil100_datasets/</guid>
+      <guid>/GTDLBench/datasets/coil100_datasets/</guid>
       <description>Columbia Object Image Library (COIL-100) The COIL-100 dataset
 This is a database of gray-scale images of 100 objects. The objects were placed on a motorized turntable against a black background. The turntable was rotated through 360 degrees to vary object pose with respect to a fixed color camera. Images of the objects were taken at pose intervals of 5 degrees. This corresponds to 72 poses per object. The images were size normalized.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/coil20/</link>
+      <link>/GTDLBench/datasets/coil20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/coil20/</guid>
+      <guid>/GTDLBench/datasets/coil20/</guid>
       <description>Columbia Object Image Library (COIL-20) The COIL20 dataset
 This is a database of gray-scale images of 20 objects. The objects were placed on motorized turntable.The turn table was rotated through 360 degrees to vary object pose with respect to fixed camera.Images of objects were taken at pose interval of 5 degrees.This corresponds to 72 images per object.
 Dataset Statistics The database has two sets. The first set contains 720 unprocessed images of 10 objects.</description>
@@ -167,10 +167,10 @@ Dataset Statistics The database has two sets. The first set contains 720 unproce
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/labelme/</link>
+      <link>/GTDLBench/datasets/labelme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/labelme/</guid>
+      <guid>/GTDLBench/datasets/labelme/</guid>
       <description>Labelme Labelme Train in Spain and test in the rest of the world dataset
 Try to recognize and segment as many object categories as you can. Training images correspond to outdoor pictures taken in different cities of Spain.
 Dataset Statistics Training set: contains more than 1000 fully annotated images and around 2000 partially annotated images. Including partially annotated images allows algorithms to show if they are able to benefit from additional partially labeled images.</description>
@@ -178,10 +178,10 @@ Dataset Statistics Training set: contains more than 1000 fully annotated images 
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/norb_dataset/</link>
+      <link>/GTDLBench/datasets/norb_dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/norb_dataset/</guid>
+      <guid>/GTDLBench/datasets/norb_dataset/</guid>
       <description>NORB DATASET The Norb dataset
 This database is intended for experiments in 3D object reocgnition from shape. It contains images of 50 toys belonging to 5 generic categories: four-legged animals, human figures, airplanes, trucks, and cars. The objects were imaged by two cameras under 6 lighting conditions, 9 elevations (30 to 70 degrees every 5 degrees), and 18 azimuths (0 to 340 every 20 degrees)
 Dataset Statistics The training set is composed of 5 instances of each category (instances 4, 6, 7, 8 and 9), and the test set of the remaining 5 instances (instances 0, 1, 2, 3, and 5).</description>
@@ -189,20 +189,20 @@ Dataset Statistics The training set is composed of 5 instances of each category 
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/openimages/</link>
+      <link>/GTDLBench/datasets/openimages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/openimages/</guid>
+      <guid>/GTDLBench/datasets/openimages/</guid>
       <description>Open Images Dataset The Open Images dataset Open Images is a dataset of almost 9 million URLs for images. These images have been annotated with image-level labels bounding boxes spanning thousands of classes. The dataset contains a training set of 9,011,219 images, a validation set of 41,260 images and a test set of 125,436 images.
 Dataset Statistics Size 500 GB (Compressed) Number of Records: 9,011,219 images with more than 5k labels References  Imagenet  Samples Dataset Usage git clone https://github.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://YanzhaoWu.github.io/GTDLBench/datasets/stl10_datset/</link>
+      <link>/GTDLBench/datasets/stl10_datset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://YanzhaoWu.github.io/GTDLBench/datasets/stl10_datset/</guid>
+      <guid>/GTDLBench/datasets/stl10_datset/</guid>
       <description>STL10 The STL-10 dataset
 The STL-10 dataset is an image recognition dataset for developing unsupervised feature learning, deep learning, self-taught learning algorithms. It is inspired by the CIFAR-10 dataset but with some modifications. In particular, each class has fewer labeled training examples than in CIFAR-10, but a very large set of unlabeled examples is provided to learn image models prior to supervised training.
 Dataset Statistics 10 classes: airplane, bird, car, cat, deer, dog, horse, monkey, ship, truck.</description>

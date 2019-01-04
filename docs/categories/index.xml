@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on GTDLBench</title>
-    <link>http://YanzhaoWu.github.io/GTDLBench/categories/</link>
+    <link>/GTDLBench/categories/</link>
     <description>Recent content in Categories on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://YanzhaoWu.github.io/GTDLBench/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/GTDLBench/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
