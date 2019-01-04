@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GTDLBench</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-04T16:52:42 EST">
+<title>ImageNet :: GTDLBench</title>
+<link rel="shortcut icon" href="https://YanzhaoWu.github.io/GTDLBench/images/favicon.ico" type="image/x-icon" />
+<link href="https://YanzhaoWu.github.io/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://YanzhaoWu.github.io/GTDLBench/css/nucleus.css" rel="stylesheet">
+<link href="https://YanzhaoWu.github.io/GTDLBench/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://YanzhaoWu.github.io/GTDLBench/css/bootstrap.min.css">
+<script src="https://YanzhaoWu.github.io/GTDLBench/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/YanzhaoWu.github.io\/GTDLBench\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/datasets/imagenet/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://YanzhaoWu.github.io/GTDLBench/">GTDLBench</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/YanzhaoWu/GTDLBench"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github Repo</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="https://YanzhaoWu.github.io/GTDLBench/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/datasets/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/">Datasets</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/datasets/mnist_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/mnist_datasets/">
+            MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cifar-10_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/cifar-10_datasets/">
+            CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cifar-100_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/cifar-100_datasets/">
+            CIFAR-100
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/att_face_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/att_face_dataset/">
+            Faces (AT&amp;T)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/caltech101_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/caltech101_datasets/">
+            CALTECH101
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/caltech256_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/caltech256_datasets/">
+            CALTECH256
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/imagenet/" class="dd-item active">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/imagenet/">
+            ImageNet
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/audioset_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/audioset_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/celeba_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/celeba_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/kinetics_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/kinetics_datasets/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/lisa_traffic_sign_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/lisa_traffic_sign_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/vqa_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/vqa_datasets/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/coil100_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/coil100_datasets/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/coil20/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/coil20/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/labelme/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/labelme/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/norb_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/norb_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/openimages/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/openimages/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/stl10_datset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/stl10_datset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/frameworks/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/">Frameworks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/frameworks/caffe/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/caffe/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/mxnet/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/tensorflow/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/tensorflow/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/theano/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/theano/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/torch/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/torch/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/comparison/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/">Comparison of DL Frameworks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/comparison/tutorials/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/">Dataset Used</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/comparison/tutorials/benchmarking_on_mnist/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_mnist/">
+            MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/comparison/tutorials/benchmarking_on_cifar10/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/">
+            CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/comparison/tutorials/benchmarking_on_cifar100/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/">
+            CIFAR-100
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/comparison/mnist_comparison/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/">
+            Comparison on MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/comparison/cifar10_comparison/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/cifar10_comparison/">
+            Comparison on CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/info/" class="dd-item
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/info/">About</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/datasets/" >
+   Datasets</option> 
+      <option value="/datasets/mnist_datasets/" >- MNIST</option>
+      <option value="/datasets/cifar-10_datasets/" >- CIFAR-10</option>
+      <option value="/datasets/cifar-100_datasets/" >- CIFAR-100</option>
+      <option value="/datasets/att_face_dataset/" >- Faces (AT&amp;T)</option>
+      <option value="/datasets/caltech101_datasets/" >- CALTECH101</option>
+      <option value="/datasets/caltech256_datasets/" >- CALTECH256</option>
+      <option value="/datasets/imagenet/"  selected>- ImageNet</option>
+      <option value="/datasets/audioset_dataset/" >- </option>
+      <option value="/datasets/celeba_dataset/" >- </option>
+      <option value="/datasets/kinetics_datasets/" >- </option>
+      <option value="/datasets/lisa_traffic_sign_dataset/" >- </option>
+      <option value="/datasets/vqa_datasets/" >- </option>
+      <option value="/datasets/coil100_datasets/" >- </option>
+      <option value="/datasets/coil20/" >- </option>
+      <option value="/datasets/labelme/" >- </option>
+      <option value="/datasets/norb_dataset/" >- </option>
+      <option value="/datasets/openimages/" >- </option>
+      <option value="/datasets/stl10_datset/" >- </option>
+  
+    <option value="/frameworks/" >
+   Frameworks</option>
+    <option value="/comparison/" >
+   Comparison of DL Frameworks</option>
+    <option value="/info/" >
+   About</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="https://YanzhaoWu.github.io/GTDLBench/js/lunr.min.js"></script>
+        <script type="text/javascript" src="https://YanzhaoWu.github.io/GTDLBench/js/auto-complete.js"></script>
+        <link href="https://YanzhaoWu.github.io/GTDLBench/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/YanzhaoWu.github.io\/GTDLBench\/";
+          
+        </script>
+        <script type="text/javascript" src="https://YanzhaoWu.github.io/GTDLBench/js/search.js"></script>
+      </div>
+    
+
+    <h1>ImageNet</h1>
+    
+    
+    
+    
+
+<h1 id="imagenet">IMAGENET</h1>
+
+<p><a href="http://www.image-net.org/">The IMAGENET dataset</a></p>
+
+<p>ImageNet is a dataset of images that are organized according to the WordNet hierarchy. WordNet contains approximately 100,000 phrases and ImageNet has provided around 1000 images on average to illustrate each phrase.</p>
+
+<h2 id="dataset-statistics">Dataset Statistics</h2>
+
+<p>Size 150 GB
+Number of Records: Total number of images: ~1,500,000; each with multiple bounding boxes and respective class labels</p>
+
+<pre><code>* Total number of non-empty synsets: 21841
+* Total number of images: 14,197,122
+* Number of images with bounding box annotations: 1,034,908
+* Number of synsets with SIFT features: 1000
+* Number of images with SIFT features: 1.2 million
+</code></pre>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li><a href="http://www.image-net.org/about-publication">Imagenet</a></li>
+</ul>
+
+<h3 id="samples">Samples</h3>
+
+<p><img src="https://YanzhaoWu.github.io/GTDLBench/figures/ImageNet.png" alt="Imagenet" /></p>
+
+<h2 id="dataset-usage">Dataset Usage</h2>
+
+<h3 id="download-dataset">Download dataset</h3>
+
+<p><a href="http://www.image-net.org/">http://www.image-net.org/</a></p>
+
+<h3 id="tensorflow">Tensorflow</h3>
+
+<p>Start by cloning the TensorFlow models repo from GitHub. Run the following commands:</p>
+
+<pre><code>git clone https://github.com/tensorflow/models.git
+
+cd models/tutorials/image/imagenet
+python classify_image.py
+</code></pre>
+
+<p>If the model runs correctly, the script will produce the following output:</p>
+
+<pre><code>giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca (score = 0.88493)
+indri, indris, Indri indri, Indri brevicaudatus (score = 0.00878)
+lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens (score = 0.00317)
+custard apple (score = 0.00149)
+earthstar (score = 0.00127)
+</code></pre>
+
+<p>Torch</p>
+
+<pre><code>git clone https://github.com/soumith/imagenet-multiGPU.torch.git
+</code></pre>
+
+<h3 id="requirements">Requirements</h3>
+
+<ul>
+<li><a href="http://torch.ch/docs/getting-started.html#_">Install torch on a machine with CUDA GPU</a></li>
+<li>If on Mac OSX, run <code>brew install coreutils findutils</code> to get GNU versions of <code>wc</code>, <code>find</code>, and <code>cut</code></li>
+<li>Download Imagenet-12 dataset from <a href="http://image-net.org/download-images">http://image-net.org/download-images</a> . It has 1000 classes and 1.2 million images.</li>
+</ul>
+
+<h3 id="data-processing">Data processing</h3>
+
+<p><strong>The images dont need to be preprocessed or packaged in any database.</strong> It is preferred to keep the dataset on an <a href="http://en.wikipedia.org/wiki/Solid-state_drive">SSD</a> but we have used the data loader comfortably over NFS without loss in speed.
+We just use a simple convention: SubFolderName == ClassName.
+So, for example: if you have classes {cat,dog}, cat images go into the folder dataset/cat and dog images go into dataset/dog</p>
+
+<p>The training images for imagenet are already in appropriate subfolders (like n07579787, n07880968).
+You need to get the validation groundtruth and move the validation images into appropriate subfolders.
+To do this, download ILSVRC2012_img_train.tar ILSVRC2012_img_val.tar and use the following commands:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># extract train data</span>
+mkdir train <span style="color:#f92672">&amp;&amp;</span> mv ILSVRC2012_img_train.tar train/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">cd</span> train
+tar -xvf ILSVRC2012_img_train.tar <span style="color:#f92672">&amp;&amp;</span> rm -f ILSVRC2012_img_train.tar
+find . -name <span style="color:#d88200">&#34;*.tar&#34;</span> <span style="color:#111">|</span> <span style="color:#00a8c8">while</span> <span style="color:#111">read</span> NAME <span style="color:#111">;</span> <span style="color:#00a8c8">do</span> mkdir -p <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#111">%.tar</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span> tar -xvf <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span> -C <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#111">%.tar</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span> rm -f <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span> <span style="color:#00a8c8">done</span>
+<span style="color:#75715e"># extract validation data</span>
+<span style="color:#111">cd</span> ../ <span style="color:#f92672">&amp;&amp;</span> mkdir val <span style="color:#f92672">&amp;&amp;</span> mv ILSVRC2012_img_val.tar val/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">cd</span> val <span style="color:#f92672">&amp;&amp;</span> tar -xvf ILSVRC2012_img_val.tar
+wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh <span style="color:#111">|</span> bash</code></pre></div>
+<p>Now you are all set!</p>
+
+<p>If your imagenet dataset is on HDD or a slow SSD, run this command to resize all the images such that the smaller dimension is 256 and the aspect ratio is intact.
+This helps with loading the data from disk faster.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -name <span style="color:#d88200">&#34;*.JPEG&#34;</span> <span style="color:#111">|</span> xargs -I <span style="color:#f92672">{}</span> convert <span style="color:#f92672">{}</span> -resize <span style="color:#d88200">&#34;256^&gt;&#34;</span> <span style="color:#f92672">{}</span></code></pre></div>
+<h3 id="running">Running</h3>
+
+<p>The training scripts come with several options which can be listed by running the script with the flag &ndash;help</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">th main.lua --help</code></pre></div>
+<p>To run the training, simply run main.lua
+By default, the script runs 1-GPU AlexNet with the CuDNN backend and 2 data-loader threads.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span></code></pre></div>
+<p>For 2-GPU model parallel AlexNet + CuDNN, you can run it this way:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span> -nGPU <span style="color:#ae81ff">2</span> -backend cudnn -netType alexnet</code></pre></div>
+<p>Similarly, you can switch the backends to &lsquo;cunn&rsquo; to use a different set of CUDA kernels.</p>
+
+<p>You can also alternatively train OverFeat using this following command:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span> -netType overfeat
+
+<span style="color:#75715e"># multi-GPU overfeat (let&#39;s say 2-GPU)</span>
+th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span> -netType overfeat -nGPU <span style="color:#ae81ff">2</span></code></pre></div>
+<p>The training script prints the current Top-1 and Top-5 error as well as the objective loss at every mini-batch.
+We hard-coded a learning rate schedule so that AlexNet converges to an error of 42.5% at the end of 53 epochs.</p>
+
+<p>At the end of every epoch, the model is saved to disk (as model_[xx].t7 where xx is the epoch number).
+You can reload this model into torch at any time using torch.load</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#111">model</span> <span style="color:#f92672">=</span> <span style="color:#111">torch.load</span><span style="color:#111">(</span><span style="color:#d88200">&#39;model_10.t7&#39;</span><span style="color:#111">)</span> <span style="color:#75715e">-- loading back a saved model</span></code></pre></div>
+<p>Similarly, if you would like to test your model on a new image, you can use testHook from line 103 in donkey.lua to load your image, and send it through the model for predictions. For example:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#111">dofile</span><span style="color:#111">(</span><span style="color:#d88200">&#39;donkey.lua&#39;</span><span style="color:#111">)</span>
+<span style="color:#111">img</span> <span style="color:#f92672">=</span> <span style="color:#111">testHook</span><span style="color:#111">({</span><span style="color:#111">loadSize</span><span style="color:#111">},</span> <span style="color:#d88200">&#39;test.jpg&#39;</span><span style="color:#111">)</span>
+<span style="color:#111">model</span> <span style="color:#f92672">=</span> <span style="color:#111">torch.load</span><span style="color:#111">(</span><span style="color:#d88200">&#39;model_10.t7&#39;</span><span style="color:#111">)</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">img</span><span style="color:#111">:</span><span style="color:#111">dim</span><span style="color:#111">()</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span> <span style="color:#00a8c8">then</span>
+  <span style="color:#111">img</span> <span style="color:#f92672">=</span> <span style="color:#111">img</span><span style="color:#111">:</span><span style="color:#111">view</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">img</span><span style="color:#111">:</span><span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">),</span> <span style="color:#111">img</span><span style="color:#111">:</span><span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#ae81ff">2</span><span style="color:#111">),</span> <span style="color:#111">img</span><span style="color:#111">:</span><span style="color:#111">size</span><span style="color:#111">(</span><span style="color:#ae81ff">3</span><span style="color:#111">))</span>
+<span style="color:#00a8c8">end</span>
+<span style="color:#111">predictions</span> <span style="color:#f92672">=</span> <span style="color:#111">model</span><span style="color:#111">:</span><span style="color:#111">forward</span><span style="color:#111">(</span><span style="color:#111">img</span><span style="color:#111">:</span><span style="color:#111">cuda</span><span style="color:#111">())</span></code></pre></div>
+<p>If you ever want to reuse this example, and debug your scripts, it is suggested to debug and develop in the single-threaded mode, so that stack traces are printed fully.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#111">th</span> <span style="color:#111">main.lua</span> <span style="color:#f92672">-</span><span style="color:#111">nDonkeys</span> <span style="color:#ae81ff">0</span> <span style="color:#111">[...</span><span style="color:#111">options</span><span style="color:#111">...]</span></code></pre></div>
+<h3 id="code-description">Code Description</h3>
+
+<ul>
+<li><code>main.lua</code> (~30 lines) - loads all other files, starts training.</li>
+<li><code>opts.lua</code> (~50 lines) - all the command-line options and description</li>
+<li><code>data.lua</code> (~60 lines) - contains the logic to create K threads for parallel data-loading.</li>
+<li><code>donkey.lua</code> (~200 lines) - contains the data-loading logic and details. It is run by each data-loader thread. random image cropping, generating 10-crops etc. are in here.</li>
+<li><code>model.lua</code> (~80 lines) - creates AlexNet model and criterion</li>
+<li><code>train.lua</code> (~190 lines) - logic for training the network. we hard-code a learning rate + weight decay schedule that produces good results.</li>
+<li><code>test.lua</code> (~120 lines) - logic for testing the network on validation set (including calculating top-1 and top-5 errors)</li>
+<li><code>dataset.lua</code> (~430 lines) - a general purpose data loader, mostly derived from <a href="https://github.com/soumith/imagenetloader.torch">here: imagenetloader.torch</a>. That repo has docs and more examples of using this loader.</li>
+</ul>
+
+<h2 id="theano">Theano</h2>
+
+<h2 id="dependencies">Dependencies</h2>
+
+<ul>
+<li><a href="http://www.numpy.org/">numpy</a></li>
+<li><a href="http://deeplearning.net/software/theano/">Theano</a></li>
+<li><a href="http://deeplearning.net/software/pylearn2/">Pylearn2</a></li>
+<li><a href="http://mathema.tician.de/software/pycuda/">PyCUDA</a></li>
+<li><a href="http://zeromq.org/bindings:python">zeromq</a></li>
+<li><a href="https://github.com/telegraphic/hickle">hickle</a></li>
+</ul>
+
+<h2 id="how-to-run">How to run</h2>
+
+<h3 id="prepare-raw-imagenet-data">Prepare raw ImageNet data</h3>
+
+<p>Download <a href="http://www.image-net.org/download-images">ImageNet dataset</a> and unzip image files.</p>
+
+<h3 id="preprocess-the-data">Preprocess the data</h3>
+
+<p>This involves shuffling training images, generating data batches, computing the mean image and generating label files.</p>
+
+<h4 id="steps">Steps</h4>
+
+<ul>
+<li>Set paths in the preprocessing/paths.yaml. Each path is described in this file.</li>
+<li>Run preprocessing/generate_data.sh, which will call 3 python scripts and do all the mentioned steps. It runs for about 1~2 days. For a quick trial of the code, run preprocessing/generate_toy_data.sh, which takes ~10 minutes and proceed.</li>
+</ul>
+
+<p>preprocessing/lists.txt is a static file that lists what files should be created by running generate_data.sh.</p>
+
+<h3 id="train-alexnet">Train AlexNet</h3>
+
+<h4 id="set-configurations">Set configurations</h4>
+
+<p>config.yaml contains common configurations for both the 1-GPU and 2-GPU version.</p>
+
+<p>spec_1gpu.yaml and spec_2gpu.yaml contains different configurations for the 1-GPU and 2-GPU version respectively.</p>
+
+<p>If you changed preprocessing/paths.yaml, make sure you change corresponding paths in config.yaml, spec_1gpu.yaml and spec_2gpu.yaml accordingly.</p>
+
+<h4 id="start-training">Start training</h4>
+
+<p>1-GPU version, run:</p>
+
+<p>THEANO_FLAGS=mode=FAST_RUN,floatX=float32 python train.py</p>
+
+<p>2-GPU version, run:</p>
+
+<p>THEANO_FLAGS=mode=FAST_RUN,floatX=float32 python train_2gpu.py</p>
+
+<p>Validation error and loss values are stored as weights_dir/val_record.npy</p>
+
+<p>Here we do not set device to gpu in THEANO_FLAGS. Instead, users should control which GPU(s) to use in spec_1gpu.yaml and spec_2gpu.yaml.</p>
+
+<h3 id="pretrained-alexnet">Pretrained AlexNet</h3>
+
+<p>Pretrained AlexNet weights and configurations can be found at <a href="https://github.com/uoguelph-mlrg/theano_alexnet/tree/master/pretrained/alexnet">pretrained/alexnet</a></p>
+
+<h2 id="caffe">Caffe</h2>
+
+<pre><code>git clone https://github.com/yihui-he/resnet-imagenet-caffe.git
+
+</code></pre>
+
+<h1 id="train-resnet-on-imagenet-with-caffe">train ResNet on ImageNet with Caffe</h1>
+
+<p>All models are trained on 4 GPUs with a minibatch size of 128. Testing is turned off during training due to memory limit(at least 12GB is require).
+The LMDB data is obtained from the <a href="http://caffe.berkeleyvision.org/gathered/examples/imagenet.html">official caffe imagenet tutorial</a></p>
+
+<p>To train a network, use train.sh. For example, train resnet-50 with gpu 0,1,2,3:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#set caffe path in train.sh</span>
+mkdir resnet_50/logs
+mkdir resnet_50/snapshot
+./train.sh <span style="color:#ae81ff">0</span>,1,2,3 resnet_50 resnet_50_</code></pre></div>
+<p><strong>For better training results, please install <a href="https://github.com/yihui-he/caffe-pro">my Caffe fork</a>, since the official Caffe ImageData layer doesn&rsquo;t support original paper&rsquo;s augmentation (resize shorter side to 256 then crop to 224x224). Use my 224x224 mean image <code>bgr.binaryproto</code> accordingly</strong><br />
+<strong>See <code>resnet_50/ResNet-50-test.prototxt</code> ImageData layer for details</strong></p>
+
+<h3 id="resnet-50">resnet-50</h3>
+
+<p>use <code>resnet_50/ResNet-50-test.prototxt</code> for training and validation<br />
+(new) We&rsquo;ve release a <a href="https://github.com/yihui-he/channel-pruning/releases/tag/ResNet-50-2X">2X accelerated ResNet-50</a> caffemodel using <a href="https://github.com/yihui-he/channel-pruning">channel-pruning</a></p>
+
+<h3 id="resnet-32">resnet-32</h3>
+
+<p>This is a bottleneck architecture,<br />
+Since there&rsquo;s no strong data augmentation and 10-crop test in caffe, the results maybe a bit low.<br />
+test accuracy: accuracy@1 = 0.67892, accuracy@5 = 0.88164<br />
+training loss for resnet-32 is shown below:<br />
+<img src="https://YanzhaoWu.github.io/GTDLBench/figures/resnet_32_loss.png" alt="ResNet32_loss" />
+the trained model is provided in <a href="https://github.com/yihui-he/resnet-imagenet-caffe/releases/download/v1.0/resnet_32_iter_750000.caffemodel">release</a></p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="https://YanzhaoWu.github.io/GTDLBench/datasets/caltech256_datasets/" title="CALTECH256"> <i class="fa fa-chevron-left"></i><label>CALTECH256</label></a>
+    <a class="nav nav-next" href="https://YanzhaoWu.github.io/GTDLBench/datasets/audioset_dataset/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/YanzhaoWu/GTDLBench/edit/master/content/datasets/imagenet.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p>
+    &copy; Georgia Institute of Technology
+</p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="https://YanzhaoWu.github.io/GTDLBench/js/clipboard.min.js"></script>
+
+<link href="https://YanzhaoWu.github.io/GTDLBench/css/featherlight.min.css" rel="stylesheet">
+<script src="https://YanzhaoWu.github.io/GTDLBench/js/featherlight.min.js"></script>
+
+
+
+<script src="https://YanzhaoWu.github.io/GTDLBench/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

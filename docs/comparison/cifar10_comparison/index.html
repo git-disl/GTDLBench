@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GTDLBench</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-04T16:52:42 EST">
+<title>Comparison on CIFAR-10 :: GTDLBench</title>
+<link rel="shortcut icon" href="https://YanzhaoWu.github.io/GTDLBench/images/favicon.ico" type="image/x-icon" />
+<link href="https://YanzhaoWu.github.io/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://YanzhaoWu.github.io/GTDLBench/css/nucleus.css" rel="stylesheet">
+<link href="https://YanzhaoWu.github.io/GTDLBench/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://YanzhaoWu.github.io/GTDLBench/css/bootstrap.min.css">
+<script src="https://YanzhaoWu.github.io/GTDLBench/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/YanzhaoWu.github.io\/GTDLBench\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/comparison/cifar10_comparison/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://YanzhaoWu.github.io/GTDLBench/">GTDLBench</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/YanzhaoWu/GTDLBench"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github Repo</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="https://YanzhaoWu.github.io/GTDLBench/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/datasets/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/">Datasets</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/datasets/mnist_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/mnist_datasets/">
+            MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cifar-10_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/cifar-10_datasets/">
+            CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cifar-100_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/cifar-100_datasets/">
+            CIFAR-100
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/att_face_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/att_face_dataset/">
+            Faces (AT&amp;T)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/caltech101_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/caltech101_datasets/">
+            CALTECH101
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/caltech256_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/caltech256_datasets/">
+            CALTECH256
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/imagenet/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/imagenet/">
+            ImageNet
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/audioset_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/audioset_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/celeba_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/celeba_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/kinetics_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/kinetics_datasets/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/lisa_traffic_sign_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/lisa_traffic_sign_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/vqa_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/vqa_datasets/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/coil100_datasets/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/coil100_datasets/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/coil20/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/coil20/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/labelme/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/labelme/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/norb_dataset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/norb_dataset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/openimages/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/openimages/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/stl10_datset/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/datasets/stl10_datset/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/frameworks/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/">Frameworks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/frameworks/caffe/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/caffe/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/mxnet/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/tensorflow/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/tensorflow/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/theano/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/theano/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/torch/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/frameworks/torch/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/comparison/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/">Comparison of DL Frameworks</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/comparison/tutorials/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/">Dataset Used</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/comparison/tutorials/benchmarking_on_mnist/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_mnist/">
+            MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/comparison/tutorials/benchmarking_on_cifar10/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/">
+            CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/comparison/tutorials/benchmarking_on_cifar100/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/">
+            CIFAR-100
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/comparison/mnist_comparison/" class="dd-item">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/">
+            Comparison on MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/comparison/cifar10_comparison/" class="dd-item active">
+        <div>
+          <a href="https://YanzhaoWu.github.io/GTDLBench/comparison/cifar10_comparison/">
+            Comparison on CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/info/" class="dd-item
+        ">
+      <div>
+      <a href="https://YanzhaoWu.github.io/GTDLBench/info/">About</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/datasets/" >
+   Datasets</option>
+    <option value="/frameworks/" >
+   Frameworks</option>
+    <option value="/comparison/" >
+   Comparison of DL Frameworks</option> 
+    <option value="/comparison/tutorials/" >
+  - 
+   Dataset Used</option>
+      <option value="/comparison/mnist_comparison/" >- Comparison on MNIST</option>
+      <option value="/comparison/cifar10_comparison/"  selected>- Comparison on CIFAR-10</option>
+  
+    <option value="/info/" >
+   About</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="https://YanzhaoWu.github.io/GTDLBench/js/lunr.min.js"></script>
+        <script type="text/javascript" src="https://YanzhaoWu.github.io/GTDLBench/js/auto-complete.js"></script>
+        <link href="https://YanzhaoWu.github.io/GTDLBench/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/YanzhaoWu.github.io\/GTDLBench\/";
+          
+        </script>
+        <script type="text/javascript" src="https://YanzhaoWu.github.io/GTDLBench/js/search.js"></script>
+      </div>
+    
+
+    <h1>Comparison on CIFAR-10</h1>
+    
+    
+    
+    <p>The benchmarking results are as following figure shows:</p>
+
+<div id="cifar10" width="400" height="100"></div>
+<div id="cifar101" width="400" height="100"></div>
+<div id="cifar102" width="400" height="100"></div>
+<div>
+    
+    <script src="https://YanzhaoWu.github.io/GTDLBench/js/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('visualization', '1', {'package':['corechart', 'controls']});
+        function drawChart() {
+            $.get("https:\/\/YanzhaoWu.github.io\/GTDLBench\/data\/CIFAR10Server1.csv", function(csvString) {
+                var tmpData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScala});
+
+                var arrayData = [];
+                var arrayData1 = [];
+                var arrayData2 = [];
+
+                for (var i = 0; i < tmpData.length; i++) {
+                    arrayData[i] = [];
+                    arrayData[i][0] = tmpData[i][0];
+                    arrayData1[i] = [];
+                    arrayData1[i][0] = tmpData[i][0];
+                    arrayData2[i] = [];
+                    arrayData2[i][0] = tmpData[i][0];
+                }
+                var dataWidth = parseInt("2");
+                for (var i = 0; i < tmpData.length; i++) {
+                    for (var j = 1; j < 1+dataWidth && j < tmpData[i].length; j++) {
+                        if (i == 0) {
+                            arrayData[i][j] = tmpData[i][j];
+                        } else {
+                            arrayData[i][j] = parseFloat(tmpData[i][j]);
+                        }
+                    }
+
+                    for (var j = 1+dataWidth; j < 1 + 2*dataWidth && j < tmpData[i].length; j++) {
+                        if (i == 0) {
+                            arrayData1[i][1+(j-1)%dataWidth] = tmpData[i][j];
+                        } else {
+                            arrayData1[i][1+(j-1)%dataWidth] = parseFloat(tmpData[i][j]);
+                        }
+                    }
+
+                    for (var j = 1+2*dataWidth; j < 1 + 3*dataWidth && j < tmpData[i].length; j++) {
+                        if (i == 0) {
+                            arrayData2[i][1+(j-1)%dataWidth] = tmpData[i][j];
+                        } else {
+                            arrayData2[i][1+(j-1)%dataWidth] = parseFloat(tmpData[i][j]);
+                        }
+                    }
+                }
+                console.log(tmpData);
+                console.log(arrayData);
+                console.log(arrayData1);
+                console.log(arrayData2);
+                var data = new google.visualization.arrayToDataTable(arrayData);
+                var data1 = new google.visualization.arrayToDataTable(arrayData1);
+                var data2 = new google.visualization.arrayToDataTable(arrayData2);
+                var chartWrapper = new google.visualization.ChartWrapper({
+                    chartType: 'BarChart',
+                    containerId: 'cifar10',
+                    dataTable: data,
+                    options:{
+                        title: 'CIFAR-10 Training Time (s)',
+                        titleTextStyle : {color: 'black', fontSize: 11},
+                        bars: 'horizontal',
+                        hAxis: {
+                            title: 'Training Time (s)',
+                            scaleType: 'log',
+                        },
+                        vAxis: {
+                            title: 'Framework',
+                        }
+                    }
+                });
+
+                var chartWrapper1 = new google.visualization.ChartWrapper({
+                    chartType: 'BarChart',
+                    containerId: 'cifar101',
+                    dataTable: data1,
+                    options:{
+                        title: 'CIFAR-10 Testing Time (s)',
+                        titleTextStyle : {color: 'black', fontSize: 11},
+                        bars: 'horizontal',
+                        hAxis: {
+                            title: 'Testing Time (s)',
+                            scaleType: 'log',
+                        },
+                        vAxis: {
+                            title: 'Framework'
+                        }
+                    }
+                });
+
+                var chartWrapper2 = new google.visualization.ChartWrapper({
+                    chartType: 'BarChart',
+                    containerId: 'cifar102',
+                    dataTable: data2,
+                    options:{
+                        title: 'CIFAR-10 Accuracy (%)',
+                        titleTextStyle : {color: 'black', fontSize: 11},
+                        bars: 'horizontal',
+                        hAxis: {
+                            title: 'Accuracy (%)',
+                        },
+                        vAxis: {
+                            title: 'Framework'
+                        }
+                    }
+                });
+
+                chartWrapper.draw();
+                chartWrapper1.draw();
+                chartWrapper2.draw();
+            });
+
+        };
+
+        google.charts.setOnLoadCallback(drawChart);
+
+    </script>
+    
+</div>
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="https://YanzhaoWu.github.io/GTDLBench/comparison/mnist_comparison/" title="Comparison on MNIST"> <i class="fa fa-chevron-left"></i><label>Comparison on MNIST</label></a>
+    <a class="nav nav-next" href="https://YanzhaoWu.github.io/GTDLBench/info/" title="About" style="margin-right: 0px;"><label>About</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/YanzhaoWu/GTDLBench/edit/master/content/comparison/cifar10_comparison.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p>
+    &copy; Georgia Institute of Technology
+</p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="https://YanzhaoWu.github.io/GTDLBench/js/clipboard.min.js"></script>
+
+<link href="https://YanzhaoWu.github.io/GTDLBench/css/featherlight.min.css" rel="stylesheet">
+<script src="https://YanzhaoWu.github.io/GTDLBench/js/featherlight.min.js"></script>
+
+
+
+<script src="https://YanzhaoWu.github.io/GTDLBench/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
