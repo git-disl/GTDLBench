@@ -11,7 +11,7 @@ With its effective and wide real applications, deep learning attracts great atte
 * Testing Time (s)
 * Accuracy (%)
 
-URL: http://yanzhaowu.me/GTDLBench/
+URL: http://git-disl.github.io/GTDLBench/
 
 Please cite the following papers:
 
