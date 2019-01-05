@@ -142,9 +142,8 @@ Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset 
       <description>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs. It is written in a scripting language, LuaJIT.
 Install cd $DLBENCH_ROOT bash torch-install.sh  This script will install Torch by compiling its source codes. And its environment will be automatically configured.
 The table below shows the statistics of Torch.
-166 text files. 166 unique files.
-66 files ignored.
-CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)</description>
+ 166 text files 166 unique files
+ 66 files ignored  CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.</description>
     </item>
     
     <item>
