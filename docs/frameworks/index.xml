@@ -11,14 +11,54 @@
     
     
     <item>
-      <title></title>
+      <title>TensorFlow</title>
+      <link>/GTDLBench/frameworks/tensorflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/frameworks/tensorflow/</guid>
+      <description>TensorFlow is a popular open-source machine learning library developed by Google. It employs dataflow programming, and it is widely used for both research and production.
+Install cd $DLBENCH_ROOT bash tensorflow-install.sh  This script will install TensorFlow through Miniconda. Please execute the following comannd to activate TensorFlow environment:
+source activate tensorflow  Another recommended installation method is to install TensorFlow by compiling source codes.
+The table below shows the statistics of TensorFlow.</description>
+    </item>
+    
+    <item>
+      <title>Caffe</title>
       <link>/GTDLBench/frameworks/caffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/GTDLBench/frameworks/caffe/</guid>
-      <description> Caffe The statistical info of Caffe is shown as follows:
+      <description>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (BAIR) and by community contributors. It is designed to be fast, expressive and extensible.
+Install cd $DLBENCH_ROOT bash caffe-install.sh  This script will install Caffe by compling it source codes.
+The statistical information of Caffe is shown as follows:
  678 text files. 677 unique files.
- 282 files ignored.  CLOC v 1.60 T=2.68 s (162.6 files/s, 36000.4 lines/s)    Language files blank comment code     C++ 188 4726 4888 41803   C/C++ Header 106 3341 7438 18325   Python 38 1431 3026 5232   CMake 33 435 476 1957   MATLAB 22 94 205 627   Bourne Shell 40 166 159 589   make 1 92 107 500   CSS 3 71 8 359   HTML 2 19 8 173   YAML 2 11 20 43   SUM: 435 10386 16335 69608    </description>
+ 282 files ignored.  CLOC v 1.60 T=2.68 s (162.</description>
+    </item>
+    
+    <item>
+      <title>Torch</title>
+      <link>/GTDLBench/frameworks/torch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/frameworks/torch/</guid>
+      <description>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs. It is written in a scripting language, LuaJIT.
+Install cd $DLBENCH_ROOT bash torch-install.sh  This script will install Torch by compiling its source codes. And its environment will be automatically configured.
+The table below shows the statistics of Torch.
+166 text files. 166 unique files.
+66 files ignored.
+CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)</description>
+    </item>
+    
+    <item>
+      <title>Theano</title>
+      <link>/GTDLBench/frameworks/theano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/frameworks/theano/</guid>
+      <description>Theano is a popular Python machine learning library, allowing users to define, optimize, and evaluate mathematical expressions. It has been powering intensive scientific workload, including deep learning since 2007.
+Install cd $DLBENCH_ROOT bash theano-install.sh  This script will install Theano through Miniconda. Please execute the following comannd to activate Theano environment:
+source activate theano  Another recommended installation method is to install Theano by compiling source codes.
+The table below shows the statistics of Theano.</description>
     </item>
     
     <item>
@@ -32,38 +72,6 @@
 705 files ignored.
 cloc v 1.60 T=4.60 s (317.1 files/s, 71521.2 lines/s)
    Language files blank comment code     Python 563 16447 35338 70836   C/C++ Header 258 6874 16657 58866   C++ 193 5318 6582 35875   Perl 79 3874 4689 21408   Scala 130 2683 5911 15865   Bourne Shell 107 820 2274 3014   Java 41 609 954 2175   Maven 17 67 13 1535   CMake 14 270 378 1489   CSS 1 237 47 1192   Javascript 10 121 168 1165   make 10 179 199 772   MATLAB 6 116 326 724   Cython 6 105 118 591   HTML 4 26 18 359   DOS Batch 4 85 81 270   YAML 8 51 60 261   C 1 20 28 201   XML 4 32 32 192   Bourne Again Shell 1 7 21 19   SUM: 1457 37941 73894 216809    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/frameworks/tensorflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/frameworks/tensorflow/</guid>
-      <description>LOC 0.4.1
-   Language Files Lines Blank Comment Code     Python 2309 729862 109417 65993 554452   C++ 2581 696781 90510 80917 525354   C/C++ Header 1372 209403 33251 57547 118605   Markdown 263 47881 10571 0 37310   Go 29 31742 1882 14027 15833   Java 85 16319 2209 3948 10162   Bourne Shell 112 11554 1595 3440 6519   Protobuf 94 9206 1463 3686 4057   Plain Text 41 3716 251 0 3465   Objective-C++ 18 2709 389 321 1999   C 9 1320 169 141 1010   Makefile 10 1407 178 266 963   XML 45 1429 253 445 731   Batch 10 276 57 0 219   Perl 2 227 36 41 150   JSON 4 126 0 0 126    LinkerScript 8 64 4 0 60   Objective-C 2 88 20 26 42   YAML 1 42 3 24 15   Autoconf 1 13 0 0 13   Total 6996 1764165 252258 230822 1281085    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/frameworks/theano/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/frameworks/theano/</guid>
-      <description>LOC
-Language Files Lines Blank Comment Code Python 380 216122 34663 18566 162893 Plain Text 189 35241 9147 0 26094 C 51 26012 1903 5110 18999 TeX 4 3317 415 286 2616 JavaScript 10 2044 220 296 1528 HTML 4 404 32 0 372 CUDA 2 451 59 100 292 CUDA Header 1 433 84 75 274 CSS 4 254 40 0 214 C/C++ Header 5 141 25 25 91 YAML 1 66 6 0 60 reStructuredText 1 50 15 0 35 Batch 1 43 8 0 35 Makefile 3 35 9 3 23 Autoconf 1 15 0 0 15 Bourne Shell 1 21 4 2 15</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/frameworks/torch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/frameworks/torch/</guid>
-      <description>166 text files. 166 unique files.
-66 files ignored.
-[CLOC]()http://cloc.sourceforge.net) v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)
-   Language files blank comment code     C 50 2668 955 17270   Lua 21 1227 424 8701   C/C++ Header 51 465 281 2287   CMake 14 197 186 1409   YAML 2 0 0 83    </description>
     </item>
     
   </channel>

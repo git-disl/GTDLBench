@@ -43,11 +43,19 @@
   </url>
   
   <url>
+    <loc>/GTDLBench/frameworks/tensorflow/</loc>
+  </url>
+  
+  <url>
     <loc>/GTDLBench/info/</loc>
   </url>
   
   <url>
     <loc>/GTDLBench/datasets/cifar-100_datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>/GTDLBench/frameworks/caffe/</loc>
   </url>
   
   <url>
@@ -59,7 +67,15 @@
   </url>
   
   <url>
+    <loc>/GTDLBench/frameworks/torch/</loc>
+  </url>
+  
+  <url>
     <loc>/GTDLBench/datasets/caltech101_datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>/GTDLBench/frameworks/theano/</loc>
   </url>
   
   <url>
@@ -119,23 +135,7 @@
   </url>
   
   <url>
-    <loc>/GTDLBench/frameworks/caffe/</loc>
-  </url>
-  
-  <url>
     <loc>/GTDLBench/frameworks/mxnet/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/frameworks/tensorflow/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/frameworks/theano/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/frameworks/torch/</loc>
   </url>
   
   <url>

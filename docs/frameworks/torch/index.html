@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-04T19:26:51 EST">
-<title> :: GTDLBench</title>
+<meta name="revised" content="2019-01-05T14:27:35 EST">
+<title>Torch :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
 <link href="/GTDLBench/css/nucleus.css" rel="stylesheet">
@@ -202,37 +202,37 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/frameworks/caffe/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/frameworks/caffe/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/frameworks/mxnet/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/frameworks/tensorflow/" class="dd-item">
         <div>
           <a href="/GTDLBench/frameworks/tensorflow/">
-            
+            TensorFlow
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/frameworks/theano/" class="dd-item">
+      <li data-nav-id="/frameworks/caffe/" class="dd-item">
         <div>
-          <a href="/GTDLBench/frameworks/theano/">
-            
+          <a href="/GTDLBench/frameworks/caffe/">
+            Caffe
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/frameworks/torch/" class="dd-item active">
         <div>
           <a href="/GTDLBench/frameworks/torch/">
+            Torch
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/theano/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/frameworks/theano/">
+            Theano
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/frameworks/mxnet/">
             
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
@@ -314,11 +314,11 @@
    Datasets</option>
     <option value="/frameworks/" >
    Frameworks</option> 
-      <option value="/frameworks/caffe/" >- </option>
+      <option value="/frameworks/tensorflow/" >- TensorFlow</option>
+      <option value="/frameworks/caffe/" >- Caffe</option>
+      <option value="/frameworks/torch/"  selected>- Torch</option>
+      <option value="/frameworks/theano/" >- Theano</option>
       <option value="/frameworks/mxnet/" >- </option>
-      <option value="/frameworks/tensorflow/" >- </option>
-      <option value="/frameworks/theano/" >- </option>
-      <option value="/frameworks/torch/"  selected>- </option>
   
     <option value="/comparison/" >
    Comparison of DL Frameworks</option>
@@ -346,15 +346,30 @@
       </div>
     
 
-    <h1></h1>
+    <h1>Torch</h1>
     
     
     
-    <p>166 text files.
+    
+
+<p>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs.
+It is written in a scripting language, LuaJIT.</p>
+
+<h3 id="install">Install</h3>
+
+<pre><code>cd $DLBENCH_ROOT
+bash torch-install.sh
+</code></pre>
+
+<p>This script will install Torch by compiling its source codes. And its environment will be automatically configured.</p>
+
+<p>The table below shows the statistics of Torch.</p>
+
+<p>166 text files.
 166 unique files.<br />
 66 files ignored.</p>
 
-<p>[CLOC]()<a href="http://cloc.sourceforge.net)">http://cloc.sourceforge.net)</a> v 1.60  T=0.86 s (159.7 files/s, 41829.2 lines/s)</p>
+<p><a href="http://cloc.sourceforge.net">CLOC</a> v 1.60  T=0.86 s (159.7 files/s, 41829.2 lines/s)</p>
 
 <table>
 <thead>
@@ -415,8 +430,8 @@
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/GTDLBench/frameworks/theano/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
-    <a class="nav nav-next" href="/GTDLBench/comparison/" title="Comparison of DL Frameworks" style="margin-right: 0px;"><label>Comparison of DL Frameworks</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/GTDLBench/frameworks/caffe/" title="Caffe"> <i class="fa fa-chevron-left"></i><label>Caffe</label></a>
+    <a class="nav nav-next" href="/GTDLBench/frameworks/theano/" title="Theano" style="margin-right: 0px;"><label>Theano</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

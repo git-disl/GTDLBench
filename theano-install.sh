@@ -15,5 +15,5 @@ source activate theano
 # You may refer http://deeplearning.net/software/theano/install.html for detailed instructions.
 
 conda install numpy scipy mkl
-conda install theanon pygpu
+conda install theano pygpu
 echo "By default, only Theano with CPU support will be installed."

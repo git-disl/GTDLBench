@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-04T19:26:51 EST">
-<title> :: GTDLBench</title>
+<meta name="revised" content="2019-01-05T14:27:35 EST">
+<title>Caffe :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
 <link href="/GTDLBench/css/nucleus.css" rel="stylesheet">
@@ -202,37 +202,37 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/frameworks/caffe/" class="dd-item active">
-        <div>
-          <a href="/GTDLBench/frameworks/caffe/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/frameworks/mxnet/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/frameworks/tensorflow/" class="dd-item">
         <div>
           <a href="/GTDLBench/frameworks/tensorflow/">
-            
+            TensorFlow
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/frameworks/theano/" class="dd-item">
+      <li data-nav-id="/frameworks/caffe/" class="dd-item active">
         <div>
-          <a href="/GTDLBench/frameworks/theano/">
-            
+          <a href="/GTDLBench/frameworks/caffe/">
+            Caffe
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/frameworks/torch/" class="dd-item">
         <div>
           <a href="/GTDLBench/frameworks/torch/">
+            Torch
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/theano/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/frameworks/theano/">
+            Theano
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/frameworks/mxnet/">
             
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
@@ -314,11 +314,11 @@
    Datasets</option>
     <option value="/frameworks/" >
    Frameworks</option> 
-      <option value="/frameworks/caffe/"  selected>- </option>
+      <option value="/frameworks/tensorflow/" >- TensorFlow</option>
+      <option value="/frameworks/caffe/"  selected>- Caffe</option>
+      <option value="/frameworks/torch/" >- Torch</option>
+      <option value="/frameworks/theano/" >- Theano</option>
       <option value="/frameworks/mxnet/" >- </option>
-      <option value="/frameworks/tensorflow/" >- </option>
-      <option value="/frameworks/theano/" >- </option>
-      <option value="/frameworks/torch/" >- </option>
   
     <option value="/comparison/" >
    Comparison of DL Frameworks</option>
@@ -346,15 +346,24 @@
       </div>
     
 
-    <h1></h1>
+    <h1>Caffe</h1>
     
     
     
     
 
-<h1 id="caffe">Caffe</h1>
+<p>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (<a href="http://bair.berkeley.edu/">BAIR</a>) and by community contributors.
+It is designed to be fast, expressive and extensible.</p>
 
-<p>The statistical info of Caffe is shown as follows:</p>
+<h3 id="install">Install</h3>
+
+<pre><code>cd $DLBENCH_ROOT
+bash caffe-install.sh
+</code></pre>
+
+<p>This script will install Caffe by compling it source codes.</p>
+
+<p>The statistical information of Caffe is shown as follows:</p>
 
 <ul>
 <li>678 text files.</li>
@@ -362,7 +371,7 @@
 <li>282 files ignored.</li>
 </ul>
 
-<h2 id="cloc-http-cloc-sourceforge-net-v-1-60-t-2-68-s-162-6-files-s-36000-4-lines-s"><a href="http://cloc.sourceforge.net">CLOC</a> v 1.60  T=2.68 s (162.6 files/s, 36000.4 lines/s)</h2>
+<p><a href="http://cloc.sourceforge.net">CLOC</a> v 1.60  T=2.68 s (162.6 files/s, 36000.4 lines/s)</p>
 
 <table>
 <thead>
@@ -471,8 +480,8 @@
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/GTDLBench/frameworks/" title="Frameworks"> <i class="fa fa-chevron-left"></i><label>Frameworks</label></a>
-    <a class="nav nav-next" href="/GTDLBench/frameworks/mxnet/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/GTDLBench/frameworks/tensorflow/" title="TensorFlow"> <i class="fa fa-chevron-left"></i><label>TensorFlow</label></a>
+    <a class="nav nav-next" href="/GTDLBench/frameworks/torch/" title="Torch" style="margin-right: 0px;"><label>Torch</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

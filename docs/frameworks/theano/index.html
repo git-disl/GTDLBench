@@ -5,8 +5,8 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-01-04T19:26:51 EST">
-<title> :: GTDLBench</title>
+<meta name="revised" content="2019-01-05T14:27:35 EST">
+<title>Theano :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
 <link href="/GTDLBench/css/nucleus.css" rel="stylesheet">
@@ -202,37 +202,37 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/frameworks/caffe/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/frameworks/caffe/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/frameworks/mxnet/">
-            
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/frameworks/tensorflow/" class="dd-item">
         <div>
           <a href="/GTDLBench/frameworks/tensorflow/">
-            
+            TensorFlow
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/frameworks/theano/" class="dd-item active">
+      <li data-nav-id="/frameworks/caffe/" class="dd-item">
         <div>
-          <a href="/GTDLBench/frameworks/theano/">
-            
+          <a href="/GTDLBench/frameworks/caffe/">
+            Caffe
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/frameworks/torch/" class="dd-item">
         <div>
           <a href="/GTDLBench/frameworks/torch/">
+            Torch
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/theano/" class="dd-item active">
+        <div>
+          <a href="/GTDLBench/frameworks/theano/">
+            Theano
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/frameworks/mxnet/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/frameworks/mxnet/">
             
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
@@ -314,11 +314,11 @@
    Datasets</option>
     <option value="/frameworks/" >
    Frameworks</option> 
-      <option value="/frameworks/caffe/" >- </option>
+      <option value="/frameworks/tensorflow/" >- TensorFlow</option>
+      <option value="/frameworks/caffe/" >- Caffe</option>
+      <option value="/frameworks/torch/" >- Torch</option>
+      <option value="/frameworks/theano/"  selected>- Theano</option>
       <option value="/frameworks/mxnet/" >- </option>
-      <option value="/frameworks/tensorflow/" >- </option>
-      <option value="/frameworks/theano/"  selected>- </option>
-      <option value="/frameworks/torch/" >- </option>
   
     <option value="/comparison/" >
    Comparison of DL Frameworks</option>
@@ -346,46 +346,217 @@
       </div>
     
 
-    <h1></h1>
+    <h1>Theano</h1>
     
     
     
     
 
-<p>LOC</p>
+<p>Theano is a popular Python machine learning library, allowing users to define, optimize, and evaluate mathematical expressions.
+It has been powering intensive scientific workload, including deep learning since 2007.</p>
 
-<hr />
+<h3 id="install">Install</h3>
 
-<h2 id="language-files-lines-blank-comment-code">Language             Files        Lines        Blank      Comment         Code</h2>
+<pre><code>cd $DLBENCH_ROOT
+bash theano-install.sh
+</code></pre>
 
-<p>Python                 380       216122        34663        18566       162893
- Plain Text             189        35241         9147            0        26094
- C                       51        26012         1903         5110        18999
- TeX                      4         3317          415          286         2616
- JavaScript              10         2044          220          296         1528
- HTML                     4          404           32            0          372
- CUDA                     2          451           59          100          292
- CUDA Header              1          433           84           75          274
- CSS                      4          254           40            0          214
- C/C++ Header             5          141           25           25           91
- YAML                     1           66            6            0           60
- reStructuredText         1           50           15            0           35
- Batch                    1           43            8            0           35
- Makefile                 3           35            9            3           23
- Autoconf                 1           15            0            0           15
- Bourne Shell             1           21            4            2           15</p>
+<p>This script will install Theano through Miniconda.
+Please execute the following comannd to activate Theano environment:</p>
 
-<h2 id="markdown-2-13-3-0-10">Markdown                 2           13            3            0           10</h2>
+<pre><code>source activate theano
+</code></pre>
 
-<h2 id="total-660-284662-46633-24463-213566">Total                  660       284662        46633        24463       213566</h2>
+<p>Another recommended installation method is to install Theano by compiling source codes.</p>
+
+<p>The table below shows the statistics of Theano.</p>
+
+<p><a href="https://github.com/cgag/loc">LOC 0.4.1</a></p>
+
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Files</th>
+<th>Lines</th>
+<th>Blank</th>
+<th>Comment</th>
+<th>Code</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Python</td>
+<td>380</td>
+<td>216122</td>
+<td>34663</td>
+<td>18566</td>
+<td>162893</td>
+</tr>
+
+<tr>
+<td>Plain Text</td>
+<td>189</td>
+<td>35241</td>
+<td>9147</td>
+<td>0</td>
+<td>26094</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td>51</td>
+<td>26012</td>
+<td>1903</td>
+<td>5110</td>
+<td>18999</td>
+</tr>
+
+<tr>
+<td>TeX</td>
+<td>4</td>
+<td>3317</td>
+<td>415</td>
+<td>286</td>
+<td>2616</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>10</td>
+<td>2044</td>
+<td>220</td>
+<td>296</td>
+<td>1528</td>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>4</td>
+<td>404</td>
+<td>32</td>
+<td>0</td>
+<td>372</td>
+</tr>
+
+<tr>
+<td>CUDA</td>
+<td>2</td>
+<td>451</td>
+<td>59</td>
+<td>100</td>
+<td>292</td>
+</tr>
+
+<tr>
+<td>CUDA Header</td>
+<td>1</td>
+<td>433</td>
+<td>84</td>
+<td>75</td>
+<td>274</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>4</td>
+<td>254</td>
+<td>40</td>
+<td>0</td>
+<td>214</td>
+</tr>
+
+<tr>
+<td>C/C++ Header</td>
+<td>5</td>
+<td>141</td>
+<td>25</td>
+<td>25</td>
+<td>91</td>
+</tr>
+
+<tr>
+<td>YAML</td>
+<td>1</td>
+<td>66</td>
+<td>6</td>
+<td>0</td>
+<td>60</td>
+</tr>
+
+<tr>
+<td>reStructuredText</td>
+<td>1</td>
+<td>50</td>
+<td>15</td>
+<td>0</td>
+<td>35</td>
+</tr>
+
+<tr>
+<td>Batch</td>
+<td>1</td>
+<td>43</td>
+<td>8</td>
+<td>0</td>
+<td>35</td>
+</tr>
+
+<tr>
+<td>Makefile</td>
+<td>3</td>
+<td>35</td>
+<td>9</td>
+<td>3</td>
+<td>23</td>
+</tr>
+
+<tr>
+<td>Autoconf</td>
+<td>1</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Bourne Shell</td>
+<td>1</td>
+<td>21</td>
+<td>4</td>
+<td>2</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Markdown</td>
+<td>2</td>
+<td>13</td>
+<td>3</td>
+<td>0</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>Total</td>
+<td>660</td>
+<td>284662</td>
+<td>46633</td>
+<td>24463</td>
+<td>213566</td>
+</tr>
+</tbody>
+</table>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/GTDLBench/frameworks/tensorflow/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
-    <a class="nav nav-next" href="/GTDLBench/frameworks/torch/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/GTDLBench/frameworks/torch/" title="Torch"> <i class="fa fa-chevron-left"></i><label>Torch</label></a>
+    <a class="nav nav-next" href="/GTDLBench/frameworks/mxnet/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
