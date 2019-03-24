@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2019-03-24T17:21:02 EDT">
-<title>Caffe :: GTDLBench</title>
+<title>USPS Dataset :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
 <link href="/GTDLBench/css/nucleus.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 
     
   </head>
-  <body data-url="/frameworks/caffe/">
+  <body data-url="/datasets/usps_dataset/">
     
       <header>
   <div class="logo">
@@ -61,10 +61,11 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/datasets/" class="dd-item haschildren
+    <li data-nav-id="/datasets/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/GTDLBench/datasets/">Datasets</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/GTDLBench/datasets/">Datasets</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/datasets/mnist_datasets/" class="dd-item">
@@ -123,7 +124,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/datasets/usps_dataset/" class="dd-item">
+      <li data-nav-id="/datasets/usps_dataset/" class="dd-item active">
         <div>
           <a href="/GTDLBench/datasets/usps_dataset/">
             USPS Dataset
@@ -202,11 +203,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/frameworks/" class="dd-item parent haschildren
+    <li data-nav-id="/frameworks/" class="dd-item haschildren
         ">
       <div>
-      <a href="/GTDLBench/frameworks/">Frameworks</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/GTDLBench/frameworks/">Frameworks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/frameworks/tensorflow/" class="dd-item">
@@ -216,7 +216,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/frameworks/caffe/" class="dd-item active">
+      <li data-nav-id="/frameworks/caffe/" class="dd-item">
         <div>
           <a href="/GTDLBench/frameworks/caffe/">
             Caffe
@@ -318,15 +318,29 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/datasets/" >
-   Datasets</option>
-    <option value="/frameworks/" >
-   Frameworks</option> 
-      <option value="/frameworks/tensorflow/" >- TensorFlow</option>
-      <option value="/frameworks/caffe/"  selected>- Caffe</option>
-      <option value="/frameworks/torch/" >- Torch</option>
-      <option value="/frameworks/theano/" >- Theano</option>
-      <option value="/frameworks/mxnet/" >- </option>
+   Datasets</option> 
+      <option value="/datasets/mnist_datasets/" >- MNIST</option>
+      <option value="/datasets/cifar-10_datasets/" >- CIFAR-10</option>
+      <option value="/datasets/cifar-100_datasets/" >- CIFAR-100</option>
+      <option value="/datasets/att_face_dataset/" >- Faces (AT&amp;T)</option>
+      <option value="/datasets/caltech101_datasets/" >- CALTECH101</option>
+      <option value="/datasets/caltech256_datasets/" >- CALTECH256</option>
+      <option value="/datasets/imagenet/" >- ImageNet</option>
+      <option value="/datasets/lisa_traffic_sign_dataset/" >- LISA Traffic Sign</option>
+      <option value="/datasets/usps_dataset/"  selected>- USPS Dataset</option>
+      <option value="/datasets/audioset_dataset/" >- </option>
+      <option value="/datasets/celeba_dataset/" >- </option>
+      <option value="/datasets/kinetics_datasets/" >- </option>
+      <option value="/datasets/vqa_datasets/" >- </option>
+      <option value="/datasets/coil100_datasets/" >- </option>
+      <option value="/datasets/coil20/" >- </option>
+      <option value="/datasets/labelme/" >- </option>
+      <option value="/datasets/norb_dataset/" >- </option>
+      <option value="/datasets/openimages/" >- </option>
+      <option value="/datasets/stl10_datset/" >- </option>
   
+    <option value="/frameworks/" >
+   Frameworks</option>
     <option value="/comparison/" >
    Comparison of DL Frameworks</option>
     <option value="/info/" >
@@ -353,142 +367,90 @@
       </div>
     
 
-    <h1>Caffe</h1>
+    <h1>USPS Dataset</h1>
     
     
     
     
 
-<p>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (<a href="http://bair.berkeley.edu/">BAIR</a>) and by community contributors.
-It is designed to be fast, expressive and extensible.</p>
+<h1 id="usps-dataset">USPS Dataset</h1>
 
-<h3 id="install">Install</h3>
+<p><a href="https://ieeexplore.ieee.org/document/291440">A database for handwritten text recognition research.</a></p>
 
-<pre><code>cd $DLBENCH_ROOT
-bash caffe-install.sh
+<h3 id="download-raw-dataset">Download Raw Dataset</h3>
+
+<p><a href="https://drive.google.com/file/d/1Me9zUREpeNTm9Woq_AR-_QnfGS2GEVzt/view?usp=sharing">USPS Dataset</a></p>
+
+<p><a href="https://drive.google.com/file/d/13FekMmwQS9eslVmKRG08Kvw5Lx81IK4d/view?usp=sharing">USPS Testing Dataset</a></p>
+
+<h2 id="dataset-statistics">Dataset Statistics</h2>
+
+<ol>
+<li># of classes: 10</li>
+<li># of data: 7291 / 2007 (testing)</li>
+<li># of features: 256</li>
+</ol>
+
+<h3 id="samples">Samples</h3>
+
+<p><img src="/GTDLBench/figures/usps.png" alt="USPS Sample" /></p>
+
+<h2 id="dataset-usage">Dataset Usage</h2>
+
+<h3 id="tensorflow">TensorFlow:</h3>
+
+<p><a href="https://github.com/darshanbagul/USPS_Digit_Classification">https://github.com/darshanbagul/USPS_Digit_Classification</a></p>
+
+<h4 id="usps-digit-classification">USPS_Digit_Classification</h4>
+
+<h5 id="requirements">Requirements</h5>
+
+<pre><code>  tensorflow==1.0.1
+  matplotlib==1.5.1
+  cv2==2.4.13
+  numpy==1.13.0
+  cPickle==1.71
 </code></pre>
 
-<p>This script will install Caffe by compling it source codes.</p>
+<h5 id="implementation">Implementation</h5>
 
-<p>The statistical information of Caffe is shown as follows:</p>
+<pre><code>1. Logistic Regression
 
-<ul>
-<li>678 text files.</li>
-<li>677 unique files.<br /></li>
-<li>282 files ignored.</li>
-</ul>
+2. Single layered Neural Networks
 
-<p><a href="http://cloc.sourceforge.net">CLOC</a> v 1.60  T=2.68 s (162.6 files/s, 36000.4 lines/s)</p>
+3. Convolutional Neural Networks
+</code></pre>
 
-<table>
-<thead>
-<tr>
-<th>Language</th>
-<th>files</th>
-<th>blank</th>
-<th>comment</th>
-<th>code</th>
-</tr>
-</thead>
+<h5 id="results">Results</h5>
 
-<tbody>
-<tr>
-<td>C++</td>
-<td>188</td>
-<td>4726</td>
-<td>4888</td>
-<td>41803</td>
-</tr>
+<ol>
+<li><p>Logistic Regression</p>
 
-<tr>
-<td>C/C++ Header</td>
-<td>106</td>
-<td>3341</td>
-<td>7438</td>
-<td>18325</td>
-</tr>
+<p>Accuracy on USPS data  -  36.30 %</p></li>
 
-<tr>
-<td>Python</td>
-<td>38</td>
-<td>1431</td>
-<td>3026</td>
-<td>5232</td>
-</tr>
+<li><p>Single Layer Neural Network</p>
 
-<tr>
-<td>CMake</td>
-<td>33</td>
-<td>435</td>
-<td>476</td>
-<td>1957</td>
-</tr>
+<p>Accuracy on USPS data  -  49.23 %</p></li>
 
-<tr>
-<td>MATLAB</td>
-<td>22</td>
-<td>94</td>
-<td>205</td>
-<td>627</td>
-</tr>
+<li><p>Convolutional Neural Networks</p>
 
-<tr>
-<td>Bourne Shell</td>
-<td>40</td>
-<td>166</td>
-<td>159</td>
-<td>589</td>
-</tr>
+<p>Accuracy on USPS data  -  63.0 %</p></li>
+</ol>
 
-<tr>
-<td>make</td>
-<td>1</td>
-<td>92</td>
-<td>107</td>
-<td>500</td>
-</tr>
+<h5 id="usage">Usage:</h5>
 
-<tr>
-<td>CSS</td>
-<td>3</td>
-<td>71</td>
-<td>8</td>
-<td>359</td>
-</tr>
-
-<tr>
-<td>HTML</td>
-<td>2</td>
-<td>19</td>
-<td>8</td>
-<td>173</td>
-</tr>
-
-<tr>
-<td>YAML</td>
-<td>2</td>
-<td>11</td>
-<td>20</td>
-<td>43</td>
-</tr>
-
-<tr>
-<td><strong>SUM:</strong></td>
-<td>435</td>
-<td>10386</td>
-<td>16335</td>
-<td>69608</td>
-</tr>
-</tbody>
-</table>
+<pre><code>git clone https://github.com/darshanbagul/USPS_Digit_Classification.git
+cd USPS_Digit_Classification
+python main.py
+</code></pre>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/GTDLBench/frameworks/tensorflow/" title="TensorFlow"> <i class="fa fa-chevron-left"></i><label>TensorFlow</label></a>
-    <a class="nav nav-next" href="/GTDLBench/frameworks/torch/" title="Torch" style="margin-right: 0px;"><label>Torch</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/GTDLBench/datasets/lisa_traffic_sign_dataset/" title="LISA Traffic Sign"> <i class="fa fa-chevron-left"></i><label>LISA Traffic Sign</label></a>
+    <a class="nav nav-next" href="/GTDLBench/datasets/audioset_dataset/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -505,7 +467,7 @@ bash caffe-install.sh
 
     
     <div class="github-link">
-      <a href="https://github.com/YanzhaoWu/GTDLBench/edit/master/content/frameworks/caffe.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/YanzhaoWu/GTDLBench/edit/master/content/datasets/USPS_dataset.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     

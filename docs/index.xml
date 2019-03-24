@@ -192,6 +192,31 @@ Dataset Statistics Size 150 GB Number of Records: Total number of images: ~1,500
     </item>
     
     <item>
+      <title>LISA Traffic Sign</title>
+      <link>/GTDLBench/datasets/lisa_traffic_sign_dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/lisa_traffic_sign_dataset/</guid>
+      <description>LISA Traffic Sign Dataset The LISA_Traffic_Sign Dataset
+The LISA Traffic Sign Dataset is a set of videos and annotated frames containing US traffic signs. It is released in two stages, one with only the pictures and one with both pictures and videos. The images are available now, while the full dataset is underway and will be made available soon.
+Dataset Statistics  47 US sign types 7855 annotations on 6610 frames.</description>
+    </item>
+    
+    <item>
+      <title>USPS Dataset</title>
+      <link>/GTDLBench/datasets/usps_dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/usps_dataset/</guid>
+      <description>USPS Dataset A database for handwritten text recognition research.
+Download Raw Dataset USPS Dataset
+USPS Testing Dataset
+Dataset Statistics  # of classes: 10 # of data: 7291 / 2007 (testing) # of features: 256  Samples Dataset Usage TensorFlow: https://github.com/darshanbagul/USPS_Digit_Classification
+USPS_Digit_Classification Requirements  tensorflow==1.0.1 matplotlib==1.5.1 cv2==2.4.13 numpy==1.13.0 cPickle==1.71  Implementation 1. Logistic Regression 2. Single layered Neural Networks 3. Convolutional Neural Networks  Results  Logistic Regression
+Accuracy on USPS data - 36.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>/GTDLBench/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -233,17 +258,6 @@ CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes dataset 
       <description>Kinetics The Kinetics dataset
 Kinetics is a large-scale, high-quality dataset of YouTube video URLs which include a diverse range of human focused actions
 Statistics The dataset consists of approximately 300,000 video clips, and covers 400 human action classes with at least 400 video clips for each action class. Each clip lasts around 10s and is labeled with a single class. All of the clips have been through multiple rounds of human annotation, and each is taken from a unique YouTube video.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/datasets/lisa_traffic_sign_dataset/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/datasets/lisa_traffic_sign_dataset/</guid>
-      <description>LISA Traffic Sign Dataset The LISA_Traffic_Sign Dataset
-The LISA Traffic Sign Dataset is a set of videos and annotated frames containing US traffic signs. It is released in two stages, one with only the pictures and one with both pictures and videos. The images are available now, while the full dataset is underway and will be made available soon.
-Dataset Statistics  47 US sign types 7855 annotations on 6610 frames.</description>
     </item>
     
     <item>
