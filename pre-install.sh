@@ -1,21 +1,31 @@
 #!/bin/bash
+source env.sh
+
 function jumpto
 {
 	label=$1
-	cmd=$(sed -n "/$label:/(:a;n;p;ba);" $0 | grep -v ':$')
+	cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
 	eval "$cmd"
 	exit
 }
+
 start=${1:-"start"}
 
 jumpto $start
 
 start:
-# Math Librai
+# Math Library
 echo "Install OpenBLAS"
+# If not found, execute the following command.
+#apt-cache search openblas
 sudo apt-get install libopenblas-dev
 echo "For MKL, you may refer to https://software.intel.com/en-us/mkl for further instructions"
-
+# Conda Library
+# Miniconda Install
+wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
+#install Miniconda
+bash Miniconda2-latest-Linux-x86_64.sh
+rm Miniconda2-latest-Linux-x86_64.sh
 
 jumpto end
 
