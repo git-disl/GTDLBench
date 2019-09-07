@@ -1,4 +1,5 @@
 #!/bin/bash
+source env.sh
 DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME/GTDLBench}
 cd $DLBENCH_ROOT
 conda create -n tensorflow python=2.7
