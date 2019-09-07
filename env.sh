@@ -4,3 +4,6 @@ DLBENCH_ROOT=${DLBENCH_ROOT:=`pwd`}
 
 # Update .profile for Miniconda
 source ~/.bashrc
+
+# For Caffe
+export PATH=$PATH:$DLBENCH_ROOT/caffe/build/tools
