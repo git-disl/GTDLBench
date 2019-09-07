@@ -1,5 +1,5 @@
 #!/bin/bash
-DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME}
+DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME/GTDLBench}
 echo "Install the dependencies for Caffe. Please refer to http://caffe.berkeleyvision.org/install_apt.html for more details"
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev
