@@ -4,8 +4,8 @@ DLBENCH_ROOT=${DLBENCH_ROOT:=`pwd`}
 
 # Update .profile for Miniconda
 BASHCONFIGFILE=~/.bashrc
-if [ -f "$FILE" ]; then
-    source $FILE
+if [ -f "$BASHCONFIGFILE" ]; then
+    source $BASHCONFIGFILE
 fi
 
 # For Caffe

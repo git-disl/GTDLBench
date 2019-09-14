@@ -1,7 +1,8 @@
 #!/bin/bash
-DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME}
+source env.sh
+DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME/GTDLBench}
 cd $DLBENCH_ROOT
-echo "If you did not install Miniconda, please execute '\$bash tensorflow-install.sh' first"
+echo "If you did not install Miniconda, please execute '\$bash pre-install.sh' first"
 
 # Miniconda Install
 #wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
