@@ -8,6 +8,12 @@ echo "If you did not install Miniconda, please execute '\$bash pre-install.sh' f
 #wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
 # Install Miniconda
 #bash Miniconda2-latest-Linux-x86_64.sh
+cd $DLBENCH_ROOT
+if ! [ -x "$(command -v conda)" ]; then
+    echo "Error: Please intall conda by executing bash pre-install.sh"
+    exit 1
+fi
+source $(conda info --base)/etc/profile.d/conda.sh
 conda create -n theano python=2.7
 source activate theano
 # Two options are recommended to install TensorFlow
