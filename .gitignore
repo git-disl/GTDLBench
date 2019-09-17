@@ -2,3 +2,5 @@
 caffe/*
 # Data
 data/*
+# Torch
+torch/*
