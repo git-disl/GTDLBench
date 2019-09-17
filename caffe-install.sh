@@ -11,6 +11,7 @@ sudo apt-get install libopenblas-dev
 
 git clone https://github.com/YanzhaoWu/caffe.git $DLBENCH_ROOT/caffe --recursive
 cd $DLBENCH_ROOT/caffe
+export PATH=`echo ${PATH} | awk -v RS=: -v ORS=: '/conda/ {next} {print}'`
 make -j all
 echo "Note: You may modify the Makefile.config to change the compiling options."
-
+sourcen env.sh # recover the environment.
