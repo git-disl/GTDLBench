@@ -17,7 +17,8 @@ start:
 # Math Library
 echo "Install OpenBLAS"
 # If not found, execute the following command.
-#apt-cache search openblas
+sudo apt-get update
+apt-cache search openblas
 sudo apt-get install libopenblas-dev
 echo "For MKL, you may refer to https://software.intel.com/en-us/mkl for further instructions"
 # Conda Library
