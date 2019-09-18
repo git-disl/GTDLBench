@@ -1,6 +1,8 @@
 # Caffe
 caffe/*
 # Data
-data/*
+#data/*
 # Torch
 torch/*
+*lmdb
+*.binaryproto
