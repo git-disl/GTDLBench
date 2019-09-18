@@ -1,0 +1,4 @@
+# reserved for storing snapshots
+*.caffemodel
+*.solverstate
+
