@@ -1,0 +1,123 @@
+<div id="{{ .Get "id"}}" width="{{ .Get "width" }}" height="{{ .Get "height" }}"></div>
+<div id="{{ .Get "id"}}1" width="{{ .Get "width" }}" height="{{ .Get "height" }}"></div>
+<div id="{{ .Get "id"}}2" width="{{ .Get "width" }}" height="{{ .Get "height" }}"></div>
+<div>
+    {{ if .Get "data" }}
+    <script src="{{"js/jquery.csv.min.js"| relURL}}"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('visualization', '1', {'package':['corechart', 'controls']});
+        function drawChart() {
+            $.get("{{ .Page.Site.BaseURL }}{{ .Get "data" }}", function(csvString) {
+                var tmpData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScala});
+
+                var arrayData = [];
+                var arrayData1 = [];
+                var arrayData2 = [];
+
+                for (var i = 0; i < tmpData.length; i++) {
+                    arrayData[i] = [];
+                    arrayData[i][0] = tmpData[i][0];
+                    arrayData1[i] = [];
+                    arrayData1[i][0] = tmpData[i][0];
+                    arrayData2[i] = [];
+                    arrayData2[i][0] = tmpData[i][0];
+                }
+                var dataWidth = parseInt({{ .Get "datawidth" }});
+                for (var i = 0; i < tmpData.length; i++) {
+                    for (var j = 1; j < 1+dataWidth && j < tmpData[i].length; j++) {
+                        if (i == 0) {
+                            arrayData[i][j] = tmpData[i][j];
+                        } else {
+                            arrayData[i][j] = parseFloat(tmpData[i][j]);
+                        }
+                    }
+
+                    for (var j = 1+dataWidth; j < 1 + 2*dataWidth && j < tmpData[i].length; j++) {
+                        if (i == 0) {
+                            arrayData1[i][1+(j-1)%dataWidth] = tmpData[i][j];
+                        } else {
+                            arrayData1[i][1+(j-1)%dataWidth] = parseFloat(tmpData[i][j]);
+                        }
+                    }
+
+                    for (var j = 1+2*dataWidth; j < 1 + 3*dataWidth && j < tmpData[i].length; j++) {
+                        if (i == 0) {
+                            arrayData2[i][1+(j-1)%dataWidth] = tmpData[i][j];
+                        } else {
+                            arrayData2[i][1+(j-1)%dataWidth] = parseFloat(tmpData[i][j]);
+                        }
+                    }
+                }
+                console.log(tmpData);
+                console.log(arrayData);
+                console.log(arrayData1);
+                console.log(arrayData2);
+                var data = new google.visualization.arrayToDataTable(arrayData);
+                var data1 = new google.visualization.arrayToDataTable(arrayData1);
+                var data2 = new google.visualization.arrayToDataTable(arrayData2);
+                var chartWrapper = new google.visualization.ChartWrapper({
+                    chartType: 'BarChart',
+                    containerId: '{{ .Get "id" }}',
+                    dataTable: data,
+                    options:{
+                        title: '{{ .Get "title" }} Training Time (s)',
+                        titleTextStyle : {color: 'black', fontSize: 11},
+                        bars: 'horizontal',
+                        hAxis: {
+                            title: 'Training Time (s)',
+                            scaleType: 'log',
+                        },
+                        vAxis: {
+                            title: 'Framework',
+                        }
+                    }
+                });
+
+                var chartWrapper1 = new google.visualization.ChartWrapper({
+                    chartType: 'BarChart',
+                    containerId: '{{ .Get "id" }}1',
+                    dataTable: data1,
+                    options:{
+                        title: '{{ .Get "title" }} Testing Time (s)',
+                        titleTextStyle : {color: 'black', fontSize: 11},
+                        bars: 'horizontal',
+                        hAxis: {
+                            title: 'Testing Time (s)',
+                            scaleType: 'log',
+                        },
+                        vAxis: {
+                            title: 'Framework'
+                        }
+                    }
+                });
+
+                var chartWrapper2 = new google.visualization.ChartWrapper({
+                    chartType: 'BarChart',
+                    containerId: '{{ .Get "id" }}2',
+                    dataTable: data2,
+                    options:{
+                        title: '{{ .Get "title" }} Accuracy (%)',
+                        titleTextStyle : {color: 'black', fontSize: 11},
+                        bars: 'horizontal',
+                        hAxis: {
+                            title: 'Accuracy (%)',
+                        },
+                        vAxis: {
+                            title: 'Framework'
+                        }
+                    }
+                });
+
+                chartWrapper.draw();
+                chartWrapper1.draw();
+                chartWrapper2.draw();
+            });
+
+        };
+
+        google.charts.setOnLoadCallback(drawChart);
+
+    </script>
+    {{ end }}
+</div>

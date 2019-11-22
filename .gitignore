@@ -6,3 +6,6 @@ caffe/*
 torch/*
 *lmdb
 *.binaryproto
+
+# editor
+.vscode
