@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-24T17:21:02 EDT">
+<meta name="revised" content="2019-11-22T14:41:59 EST">
 <title>ImageNet :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
     <nav class="shortcuts">
             <li class="" role="">
-                <a href="https://github.com/YanzhaoWu/GTDLBench"  rel="noopener">
+                <a href="https://github.com/git-disl/GTDLBench"  rel="noopener">
                   <i class='fa fa-github'></i> <label>Github Repo</label>
                 </a>
             </li>
@@ -448,12 +448,12 @@ So, for example: if you have classes {cat,dog}, cat images go into the folder da
 <p>The training images for imagenet are already in appropriate subfolders (like n07579787, n07880968).
 You need to get the validation groundtruth and move the validation images into appropriate subfolders.
 To do this, download ILSVRC2012_img_train.tar ILSVRC2012_img_val.tar and use the following commands:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># extract train data</span>
-mkdir train <span style="color:#f92672">&amp;&amp;</span> mv ILSVRC2012_img_train.tar train/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">cd</span> train
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># extract train data
+</span><span style="color:#75715e"></span>mkdir train <span style="color:#f92672">&amp;&amp;</span> mv ILSVRC2012_img_train.tar train/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">cd</span> train
 tar -xvf ILSVRC2012_img_train.tar <span style="color:#f92672">&amp;&amp;</span> rm -f ILSVRC2012_img_train.tar
 find . -name <span style="color:#d88200">&#34;*.tar&#34;</span> <span style="color:#111">|</span> <span style="color:#00a8c8">while</span> <span style="color:#111">read</span> NAME <span style="color:#111">;</span> <span style="color:#00a8c8">do</span> mkdir -p <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#111">%.tar</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span> tar -xvf <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span> -C <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#111">%.tar</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span> rm -f <span style="color:#d88200">&#34;</span><span style="color:#d88200">${</span><span style="color:#111">NAME</span><span style="color:#d88200">}</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span> <span style="color:#00a8c8">done</span>
-<span style="color:#75715e"># extract validation data</span>
-<span style="color:#111">cd</span> ../ <span style="color:#f92672">&amp;&amp;</span> mkdir val <span style="color:#f92672">&amp;&amp;</span> mv ILSVRC2012_img_val.tar val/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">cd</span> val <span style="color:#f92672">&amp;&amp;</span> tar -xvf ILSVRC2012_img_val.tar
+<span style="color:#75715e"># extract validation data
+</span><span style="color:#75715e"></span><span style="color:#111">cd</span> ../ <span style="color:#f92672">&amp;&amp;</span> mkdir val <span style="color:#f92672">&amp;&amp;</span> mv ILSVRC2012_img_val.tar val/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">cd</span> val <span style="color:#f92672">&amp;&amp;</span> tar -xvf ILSVRC2012_img_val.tar
 wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh <span style="color:#111">|</span> bash</code></pre></div>
 <p>Now you are all set!</p>
 
@@ -474,8 +474,8 @@ By default, the script runs 1-GPU AlexNet with the CuDNN backend and 2 data-load
 <p>You can also alternatively train OverFeat using this following command:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span> -netType overfeat
 
-<span style="color:#75715e"># multi-GPU overfeat (let&#39;s say 2-GPU)</span>
-th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span> -netType overfeat -nGPU <span style="color:#ae81ff">2</span></code></pre></div>
+<span style="color:#75715e"># multi-GPU overfeat (let&#39;s say 2-GPU)
+</span><span style="color:#75715e"></span>th main.lua -data <span style="color:#f92672">[</span>imagenet-folder with train and val folders<span style="color:#f92672">]</span> -netType overfeat -nGPU <span style="color:#ae81ff">2</span></code></pre></div>
 <p>The training script prints the current Top-1 and Top-5 error as well as the objective loss at every mini-batch.
 We hard-coded a learning rate schedule so that AlexNet converges to an error of 42.5% at the end of 53 epochs.</p>
 
@@ -577,8 +577,8 @@ You can reload this model into torch at any time using torch.load</p>
 The LMDB data is obtained from the <a href="http://caffe.berkeleyvision.org/gathered/examples/imagenet.html">official caffe imagenet tutorial</a></p>
 
 <p>To train a network, use train.sh. For example, train resnet-50 with gpu 0,1,2,3:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#set caffe path in train.sh</span>
-mkdir resnet_50/logs
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#set caffe path in train.sh
+</span><span style="color:#75715e"></span>mkdir resnet_50/logs
 mkdir resnet_50/snapshot
 ./train.sh <span style="color:#ae81ff">0</span>,1,2,3 resnet_50 resnet_50_</code></pre></div>
 <p><strong>For better training results, please install <a href="https://github.com/yihui-he/caffe-pro">my Caffe fork</a>, since the official Caffe ImageData layer doesn&rsquo;t support original paper&rsquo;s augmentation (resize shorter side to 256 then crop to 224x224). Use my 224x224 mean image <code>bgr.binaryproto</code> accordingly</strong><br />
@@ -621,7 +621,7 @@ the trained model is provided in <a href="https://github.com/yihui-he/resnet-ima
 
     
     <div class="github-link">
-      <a href="https://github.com/YanzhaoWu/GTDLBench/edit/master/content/datasets/imagenet.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/git-disl/GTDLBench/edit/master/content/datasets/imagenet.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     
@@ -633,7 +633,7 @@ the trained model is provided in <a href="https://github.com/yihui-he/resnet-ima
 
   
     <p>
-    &copy; Georgia Institute of Technology
+    &copy; [DiSL](https://www.cc.gatech.edu/projects/disl/) @ Georgia Institute of Technology
 </p>
 
   

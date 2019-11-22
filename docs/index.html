@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta name="generator" content="Hugo 0.53" />
+	<meta name="generator" content="Hugo 0.49.2" />
     <title>GTDLBench</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-03-24T17:21:02 EDT">
+<meta name="revised" content="2019-11-22T14:41:59 EST">
 <title>GTDLBench :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
     <nav class="shortcuts">
             <li class="" role="">
-                <a href="https://github.com/YanzhaoWu/GTDLBench"  rel="noopener">
+                <a href="https://github.com/git-disl/GTDLBench"  rel="noopener">
                   <i class='fa fa-github'></i> <label>Github Repo</label>
                 </a>
             </li>
@@ -366,9 +366,22 @@
 <h3 id="end-to-end-benchmark">End-to-end Benchmark</h3>
 
 <ul>
+<li>Utility
+
+<ul>
+<li>Accuracy (Top-1, Top-5) (%)</li>
+</ul></li>
+<li>Cost
+
+<ul>
 <li>Training Time (s)</li>
 <li>Testing Time (s)</li>
-<li>Accuracy (%)</li>
+</ul></li>
+<li>System
+
+<ul>
+<li>Throughput (MB/s)</li>
+</ul></li>
 </ul>
 
 <h3 id="micro-benchmark">Micro Benchmark</h3>
@@ -400,7 +413,7 @@
 <h2 id="datasets">Datasets</h2>
 
 <ul>
-<li><a href="/GTDLBench/datasets/att_face_dataset/">AT&amp;T Faces</a> | <a href="https://drive.google.com/open?id=1ibW1KHYo_tE2ZIu0EfAmCR_p0Rros3M0">Download</a></li>
+<li><a href="/GTDLBench/datasets/att_face_dataset/">AT&amp;T Faces</a> | <a href="https://drive.google.com/file/d/1ibW1KHYo_tE2ZIu0EfAmCR_p0Rros3M0/view?usp=sharing">Download</a></li>
 <li><a href="/GTDLBench/datasets/CALTECH101_datasets/">Caltech-101</a> | Download</li>
 <li><a href="/GTDLBench/datasets/CIFAR-10_datasets/">CIFAR-10</a> | <a href="https://drive.google.com/open?id=1n5oKcBgBI7_oEp9xroAIyJbHvVp0bZDe">Download</a></li>
 <li><a href="/GTDLBench/datasets/CIFAR-100_datasets/">CIFAR-100</a> | <a href="https://drive.google.com/open?id=1N1u6jZacEgnT3t1aYEBd2y7Bnwb5FK-k">Download</a></li>
@@ -427,12 +440,12 @@
         </a>
     </li>
     <li>
-        <a href="https://arxiv.org/abs/1810.12210" >
+        <a href="https://ieeexplore.ieee.org/document/8765795" >
             A Comparative Measurement Study of Deep Learning as a Service Framework
         </a>
     </li>
     <li>
-        <a href="" >
+        <a href="https://ieeexplore.ieee.org/document/8621930" >
             Experimental Characterizations and Analysis of Deep Learning Frameworks
         </a>
     </li>
@@ -449,21 +462,18 @@
     month={July},
 }
 
-@ARTICLE{GTDLBencharXiv,
-    author = {{Wu}, Yanzhao and {Liu}, Ling and {Pu}, Calton and {Cao}, Wenqi and
-    {Sahin}, Semih and {Wei}, Wenqi and {Zhang}, Qi},
-    title = &quot;{A Comparative Measurement Study of Deep Learning as a Service Framework}&quot;,
-    journal = {arXiv e-prints},
-    keywords = {Computer Science - Performance, Computer Science - Machine Learning},
-    year = 2018,
-    month = Oct,
-    eid = {arXiv:1810.12210},
-    pages = {arXiv:1810.12210},
-    archivePrefix = {arXiv},
-    eprint = {1810.12210},
-    primaryClass = {cs.PF},
-    adsurl = {https://ui.adsabs.harvard.edu/\#abs/2018arXiv181012210W},
-    adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@ARTICLE{GTDLBencharTSC,
+    author={Y. {Wu} and L. {Liu} and C. {Pu} and W. {Cao} and S. {Sahin} and W. {Wei} and Q. {Zhang}}, 
+    journal={IEEE Transactions on Services Computing}, 
+    title={A Comparative Measurement Study of Deep Learning as a Service Framework}, 
+    year={2019}, 
+    volume={}, 
+    number={}, 
+    pages={1-1}, 
+    keywords={Libraries;Parallel processing;Hardware;Training;Runtime;Deep learning;Task analysis;Deep Learning as a Service;Big Data;Deep Neural Networks;Accuracy}, 
+    doi={10.1109/TSC.2019.2928551}, 
+    ISSN={1939-1374}, 
+    month={},
 }
 
 @INPROCEEDINGS{GTDLBenchBigData, 
@@ -499,7 +509,7 @@
 
     
     <div class="github-link">
-      <a href="https://github.com/YanzhaoWu/GTDLBench/edit/master/content/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/git-disl/GTDLBench/edit/master/content/_index.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     
@@ -511,7 +521,7 @@
 
   
     <p>
-    &copy; Georgia Institute of Technology
+    &copy; [DiSL](https://www.cc.gatech.edu/projects/disl/) @ Georgia Institute of Technology
 </p>
 
   

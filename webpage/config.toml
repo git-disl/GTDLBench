@@ -1,11 +1,11 @@
-baseURL = "https://github.gatech.edu/pages/wyanzhao3/GTDLBench/"
+baseURL = "/GTDLBench/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "GTDLBench"
 theme = "docdock"
 #themesdir = "../.."
-publishDir = "docs" # for Github project pages
+publishDir = "../docs" # for Github project pages
 canonifyurls = true
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
@@ -27,10 +27,8 @@ enableMissingTranslationPlaceholders = false
 # languageName = "Français"
 
 
-
-
 [params]
-editURL = "https://github.com/YanzhaoWu/GTDLBench/edit/master/content/"
+editURL = "https://github.com/git-disl/GTDLBench/edit/master/content/"
 showVisitedLinks = true # default is false
 themeStyle = "flex" # "original" or "flex" # default "flex"
 #themeVariant = "gray" # choose theme variant "green", "gold" , "gray", "blue" (default)
@@ -50,7 +48,7 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> <label>Github Repo</label>"
 identifier = "ds"
-url = "https://github.com/YanzhaoWu/GTDLBench"
+url = "https://github.com/git-disl/GTDLBench"
 weight = 10
 
 # [[menu.shortcuts]]
