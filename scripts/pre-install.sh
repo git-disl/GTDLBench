@@ -1,6 +1,4 @@
 #!/bin/bash
-source env.sh
-
 function jumpto
 {
 	label=$1

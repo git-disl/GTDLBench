@@ -1,5 +1,4 @@
 #!/bin/bash
-source env.sh
 DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME/GTDLBench}
 cd $DLBENCH_ROOT
 echo "If you did not install Miniconda, please execute '\$bash pre-install.sh' first"

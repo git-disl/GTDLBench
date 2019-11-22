@@ -1,5 +1,4 @@
 #!/bin/bash
-source env.sh
 DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME/GTDLBench}
 cd $DLBENCH_ROOT
 if ! [ -x "$(command -v conda)" ]; then

@@ -1,5 +1,4 @@
 #!/bin/bash
-source env.sh
 DLBENCH_ROOT=${DLBENCH_ROOT:=$HOME/GTDLBench}
 echo "Install the dependencies for Caffe. Please refer to http://caffe.berkeleyvision.org/install_apt.html for more details"
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
@@ -14,4 +13,3 @@ cd $DLBENCH_ROOT/caffe
 export PATH=`echo ${PATH} | awk -v RS=: -v ORS=: '/conda/ {next} {print}'`
 make -j all
 echo "Note: You may modify the Makefile.config to change the compiling options."
-sourcen env.sh # recover the environment.
