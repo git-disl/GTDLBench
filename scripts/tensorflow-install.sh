@@ -7,7 +7,6 @@ if ! [ -x "$(command -v conda)" ]; then
 fi
 source $(conda info --base)/etc/profile.d/conda.sh
 conda create -n tensorflow python=2.7
-source env.sh
 conda activate tensorflow
 # Two options are recommended to install TensorFlow
 # 1. Install via conda
