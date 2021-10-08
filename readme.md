@@ -13,6 +13,12 @@ With its effective and wide real applications, deep learning attracts great atte
 
 URL: http://git-disl.github.io/GTDLBench/
 
+## Tutorial
+1. Installation: https://youtu.be/QD5Cy6Y0fkk
+2. Dataset preparation: https://youtu.be/ZAYTXQP_zSc
+3. MNIST: https://youtu.be/HuPWPFB7MnU
+4. CIFAR-10: https://youtu.be/PI3CiBrYc5A
+
 Please cite the following papers:
 
 <section class="attachments">
@@ -26,12 +32,12 @@ Please cite the following papers:
         </a>
     </li>
     <li>
-        <a href="https://arxiv.org/abs/1810.12210" >
+        <a href="https://ieeexplore.ieee.org/document/8765795" >
             A Comparative Measurement Study of Deep Learning as a Service Framework
         </a>
     </li>
     <li>
-        <a href="" >
+        <a href="https://ieeexplore.ieee.org/document/8621930" >
             Experimental Characterizations and Analysis of Deep Learning Frameworks
         </a>
     </li>
@@ -49,21 +55,15 @@ Please cite the following papers:
         month={July},
     }
 
-    @ARTICLE{GTDLBencharXiv,
-        author = {{Wu}, Yanzhao and {Liu}, Ling and {Pu}, Calton and {Cao}, Wenqi and
-        {Sahin}, Semih and {Wei}, Wenqi and {Zhang}, Qi},
-        title = "{A Comparative Measurement Study of Deep Learning as a Service Framework}",
-        journal = {arXiv e-prints},
-        keywords = {Computer Science - Performance, Computer Science - Machine Learning},
-        year = 2018,
-        month = Oct,
-        eid = {arXiv:1810.12210},
-        pages = {arXiv:1810.12210},
-        archivePrefix = {arXiv},
-        eprint = {1810.12210},
-        primaryClass = {cs.PF},
-        adsurl = {https://ui.adsabs.harvard.edu/\#abs/2018arXiv181012210W},
-        adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+    @ARTICLE{GTDLBenchTSC,
+        author={Wu, Yanzhao and Liu, Ling and Pu, Calton and Cao, Wenqi and Sahin, Semih and Wei, Wenqi and Zhang, Qi},
+        journal={IEEE Transactions on Services Computing},
+        title={A Comparative Measurement Study of Deep Learning as a Service Framework},
+        year={2019},
+        volume={},
+        number={},
+        pages={1-1},
+        doi={10.1109/TSC.2019.2928551},
     }
 
     @INPROCEEDINGS{GTDLBenchBigData, 
@@ -71,5 +71,8 @@ Please cite the following papers:
         booktitle={2018 IEEE 38th International Conference on Big Data}, 
         title="{Experimental Characterizations and Analysis of Deep Learning Frameworks}", 
         year={2018},
-        month={December},
+        volume={},
+        number={},
+        pages={372-377},
+        doi={10.1109/BigData.2018.8621930},
     }
