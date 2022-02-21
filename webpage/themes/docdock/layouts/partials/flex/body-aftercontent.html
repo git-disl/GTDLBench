@@ -38,18 +38,7 @@
 
 
 	<div>
-{{ $footer := print "_footer." .Lang }}
-{{ range where .Site.Pages "File.BaseFileName" $footer }}
-  {{ .Content }} 
-{{else}}
-  {{ if .Site.GetPage "page" "_footer.md" }}
-    {{(.Site.GetPage "page" "_footer.md").Content}}
-  {{else}}
-    {{ T "create-footer-md" }}
-  {{end}}
-{{end}}
-
-
+    {{ partial "custom-content-footer.html" . }}
 	</div>
 </footer>
 
