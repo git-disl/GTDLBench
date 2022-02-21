@@ -1,159 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/GTDLBench/comparison/tutorials/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/frameworks/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/mnist_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/cifar-10_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/comparison/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/comparison/mnist_comparison/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/frameworks/tensorflow/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/info/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/datasets/cifar-100_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/frameworks/caffe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/GTDLBench/datasets/cifar-100_datasets/</loc>
+  </url><url>
     <loc>/GTDLBench/comparison/cifar10_comparison/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/att_face_dataset/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/frameworks/torch/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/caltech101_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/frameworks/theano/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/caltech256_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/imagenet/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/lisa_traffic_sign_dataset/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/usps_dataset/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/_footer/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/audioset_dataset/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/celeba_dataset/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/datasets/kinetics_datasets/</loc>
-  </url>
-  
-  <url>
-    <loc>/GTDLBench/datasets/vqa_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/coil100_datasets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/coil20/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/GTDLBench/datasets/kinetics_datasets/</loc>
+  </url><url>
     <loc>/GTDLBench/datasets/labelme/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/norb_dataset/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/openimages/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/datasets/stl10_datset/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/GTDLBench/datasets/vqa_datasets/</loc>
+  </url><url>
     <loc>/GTDLBench/frameworks/mxnet/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/GTDLBench/tags/</loc>
-    <priority>0</priority>
   </url>
-  
 </urlset>

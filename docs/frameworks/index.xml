@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frameworks on GTDLBench</title>
     <link>/GTDLBench/frameworks/</link>
     <description>Recent content in Frameworks on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/GTDLBench/frameworks/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/GTDLBench/frameworks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TensorFlow</title>
       <link>/GTDLBench/frameworks/tensorflow/</link>
@@ -31,8 +27,7 @@ The table below shows the statistics of TensorFlow.</description>
       <description>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (BAIR) and by community contributors. It is designed to be fast, expressive and extensible.
 Install cd $DLBENCH_ROOT bash caffe-install.sh  This script will install Caffe by compling it source codes.
 The statistical information of Caffe is shown as follows:
- 678 text files. 677 unique files.
- 282 files ignored.  CLOC v 1.60 T=2.68 s (162.</description>
+ 678 text files. 677 unique files. 282 files ignored.  CLOC v 1.60 T=2.68 s (162.6 files/s, 36000.</description>
     </item>
     
     <item>
@@ -44,8 +39,7 @@ The statistical information of Caffe is shown as follows:
       <description>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs. It is written in a scripting language, LuaJIT.
 Install cd $DLBENCH_ROOT bash torch-install.sh  This script will install Torch by compiling its source codes. And its environment will be automatically configured.
 The table below shows the statistics of Torch.
- 166 text files 166 unique files
- 66 files ignored  CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.</description>
+ 166 text files 166 unique files 66 files ignored  CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)</description>
     </item>
     
     <item>

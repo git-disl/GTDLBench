@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GTDLBench</title>
     <link>/GTDLBench/</link>
     <description>Recent content on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/GTDLBench/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/GTDLBench/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MNIST</title>
       <link>/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</link>
@@ -17,8 +13,9 @@
       
       <guid>/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</guid>
       <description>Benchmarking on MNIST: The following mentioned model definition files are under the folder: models/mnist/ .
-Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;  TensorFlow: TensorFlow uses a variant of LeNet and its network structure is shown as follows:   TensorFlow default model   Run TensorFlow with its default MNIST setting:
-cd $DLBENCH_ROOT/models/mnist/tensorflow/ python mnist_deep.py  The Training Time, Testing Time and Accuracy will appear after completion.</description>
+Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot; TensorFlow: TensorFlow uses a variant of LeNet and its network structure is shown as follows:  TensorFlow default model   Run TensorFlow with its default MNIST setting:
+cd $DLBENCH_ROOT/models/mnist/tensorflow/python mnist_deep.py The Training Time, Testing Time and Accuracy will appear after completion.
+Caffe: Similarly, the NN network structure of Caffe is shown as follows:</description>
     </item>
     
     <item>
@@ -28,9 +25,9 @@ cd $DLBENCH_ROOT/models/mnist/tensorflow/ python mnist_deep.py  The Training Tim
       
       <guid>/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</guid>
       <description>Benchmarking on CIFAR-10: The following mentioned model definition files are under the folder: models/cifar10/ .
-Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;  TensorFlow: Run TensorFlow with its default MNIST setting:
-cd $DLBENCH_ROOT/models/cifar10/tensorflow/ python cifar10_train.py &amp;gt; train_log.txt 2&amp;gt;&amp;amp;1  After the completion of training, run the following command to test the tranined model:
-python cifar10_eval.py &amp;gt; test_log.txt 2&amp;gt;&amp;amp;1  The Accuracy will appear after completion of cifar10_eval.py. And the Training Time and Testing Time can be extracted from the train_log.</description>
+Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot; TensorFlow: Run TensorFlow with its default MNIST setting:
+cd $DLBENCH_ROOT/models/cifar10/tensorflow/python cifar10_train.py &amp;gt; train_log.txt 2&amp;gt;&amp;amp;1 After the completion of training, run the following command to test the tranined model:
+python cifar10_eval.py &amp;gt; test_log.txt 2&amp;gt;&amp;amp;1 The Accuracy will appear after completion of cifar10_eval.py. And the Training Time and Testing Time can be extracted from the train_log.</description>
     </item>
     
     <item>
@@ -91,16 +88,6 @@ The table below shows the statistics of TensorFlow.</description>
     </item>
     
     <item>
-      <title>CIFAR-100</title>
-      <link>/GTDLBench/datasets/cifar-100_datasets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/datasets/cifar-100_datasets/</guid>
-      <description>CIFAR-100 dataset The CIFAR-100 dataset
-Dataset Statistics  Color: RGB Sample Size: 32x32  This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are roughly grouped into 20 superclasses. Each image comes with a &amp;ldquo;fine&amp;rdquo; label (the class to which it belongs) and a &amp;ldquo;coarse&amp;rdquo; label (the superclass to which it belongs).</description>
-    </item>
-    
-    <item>
       <title>Caffe</title>
       <link>/GTDLBench/frameworks/caffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -109,8 +96,17 @@ Dataset Statistics  Color: RGB Sample Size: 32x32  This dataset is just like the
       <description>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (BAIR) and by community contributors. It is designed to be fast, expressive and extensible.
 Install cd $DLBENCH_ROOT bash caffe-install.sh  This script will install Caffe by compling it source codes.
 The statistical information of Caffe is shown as follows:
- 678 text files. 677 unique files.
- 282 files ignored.  CLOC v 1.60 T=2.68 s (162.</description>
+ 678 text files. 677 unique files. 282 files ignored.  CLOC v 1.60 T=2.68 s (162.6 files/s, 36000.</description>
+    </item>
+    
+    <item>
+      <title>CIFAR-100</title>
+      <link>/GTDLBench/datasets/cifar-100_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/cifar-100_datasets/</guid>
+      <description>CIFAR-100 dataset The CIFAR-100 dataset
+Dataset Statistics  Color: RGB Sample Size: 32x32  This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are roughly grouped into 20 superclasses. Each image comes with a &amp;ldquo;fine&amp;rdquo; label (the class to which it belongs) and a &amp;ldquo;coarse&amp;rdquo; label (the superclass to which it belongs).</description>
     </item>
     
     <item>
@@ -130,7 +126,7 @@ The statistical information of Caffe is shown as follows:
       
       <guid>/GTDLBench/datasets/att_face_dataset/</guid>
       <description>The Database of Faces (AT&amp;amp;T) The Database of Faces
-Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset Size: 4.5 MB (compressed in .tar.z)  The original files are in PGM format, and can conveniently be viewed on UNIX &amp;trade; systems using the &amp;lsquo;xv&amp;rsquo; program. The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40 directories (one for each subject), which have names of the form sX, where X indicates the subject number (between 1 and 40).</description>
+Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset Size: 4.5 MB (compressed in .tar.z)  The original files are in PGM format, and can conveniently be viewed on UNIX (TM) systems using the &amp;lsquo;xv&amp;rsquo; program. The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40 directories (one for each subject), which have names of the form sX, where X indicates the subject number (between 1 and 40).</description>
     </item>
     
     <item>
@@ -142,8 +138,7 @@ Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset 
       <description>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs. It is written in a scripting language, LuaJIT.
 Install cd $DLBENCH_ROOT bash torch-install.sh  This script will install Torch by compiling its source codes. And its environment will be automatically configured.
 The table below shows the statistics of Torch.
- 166 text files 166 unique files
- 66 files ignored  CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.</description>
+ 166 text files 166 unique files 66 files ignored  CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)</description>
     </item>
     
     <item>
@@ -212,17 +207,8 @@ Dataset Statistics  47 US sign types 7855 annotations on 6610 frames.</descripti
 Download Raw Dataset USPS Dataset
 USPS Testing Dataset
 Dataset Statistics  # of classes: 10 # of data: 7291 / 2007 (testing) # of features: 256  Samples Dataset Usage TensorFlow: https://github.com/darshanbagul/USPS_Digit_Classification
-USPS_Digit_Classification Requirements  tensorflow==1.0.1 matplotlib==1.5.1 cv2==2.4.13 numpy==1.13.0 cPickle==1.71  Implementation 1. Logistic Regression 2. Single layered Neural Networks 3. Convolutional Neural Networks  Results  Logistic Regression
+USPS_Digit_Classification Requirements  tensorflow==1.0.1matplotlib==1.5.1cv2==2.4.13numpy==1.13.0cPickle==1.71Implementation 1. Logistic Regression2. Single layered Neural Networks3. Convolutional Neural Networks Results   Logistic Regression
 Accuracy on USPS data - 36.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/_footer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/_footer/</guid>
-      <description> &amp;copy; [DiSL](https://www.cc.gatech.edu/projects/disl/) @ Georgia Institute of Technology </description>
     </item>
     
     <item>
@@ -251,29 +237,6 @@ CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes dataset 
     
     <item>
       <title></title>
-      <link>/GTDLBench/datasets/kinetics_datasets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/datasets/kinetics_datasets/</guid>
-      <description>Kinetics The Kinetics dataset
-Kinetics is a large-scale, high-quality dataset of YouTube video URLs which include a diverse range of human focused actions
-Statistics The dataset consists of approximately 300,000 video clips, and covers 400 human action classes with at least 400 video clips for each action class. Each clip lasts around 10s and is labeled with a single class. All of the clips have been through multiple rounds of human annotation, and each is taken from a unique YouTube video.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/datasets/vqa_datasets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/datasets/vqa_datasets/</guid>
-      <description>VISUAL QA The VQA dataset
-VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer.
-Dataset Statistics 265,016 images (COCO and abstract scenes) 1,105,904 questions 11,059,040 ground truth answers
-At least 3 questions (5.4 questions on average) per image 10 ground truth answers per question 3 plausible (but likely incorrect) answers per question Automatic evaluation metric</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>/GTDLBench/datasets/coil100_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -291,6 +254,17 @@ This is a database of gray-scale images of 100 objects. The objects were placed 
       <description>Columbia Object Image Library (COIL-20) The COIL20 dataset
 This is a database of gray-scale images of 20 objects. The objects were placed on motorized turntable.The turn table was rotated through 360 degrees to vary object pose with respect to fixed camera.Images of objects were taken at pose interval of 5 degrees.This corresponds to 72 images per object.
 Dataset Statistics The database has two sets. The first set contains 720 unprocessed images of 10 objects.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/GTDLBench/datasets/kinetics_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/kinetics_datasets/</guid>
+      <description>Kinetics The Kinetics dataset
+Kinetics is a large-scale, high-quality dataset of YouTube video URLs which include a diverse range of human focused actions
+Statistics The dataset consists of approximately 300,000 video clips, and covers 400 human action classes with at least 400 video clips for each action class. Each clip lasts around 10s and is labeled with a single class. All of the clips have been through multiple rounds of human annotation, and each is taken from a unique YouTube video.</description>
     </item>
     
     <item>
@@ -334,6 +308,19 @@ Dataset Statistics Size 500 GB (Compressed) Number of Records: 9,011,219 images 
       <description>STL10 The STL-10 dataset
 The STL-10 dataset is an image recognition dataset for developing unsupervised feature learning, deep learning, self-taught learning algorithms. It is inspired by the CIFAR-10 dataset but with some modifications. In particular, each class has fewer labeled training examples than in CIFAR-10, but a very large set of unlabeled examples is provided to learn image models prior to supervised training.
 Dataset Statistics 10 classes: airplane, bird, car, cat, deer, dog, horse, monkey, ship, truck.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/GTDLBench/datasets/vqa_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/vqa_datasets/</guid>
+      <description>VISUAL QA The VQA dataset
+VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer.
+Dataset Statistics 265,016 images (COCO and abstract scenes) 1,105,904 questions 11,059,040 ground truth answers
+At least 3 questions (5.4 questions on average) per image 10 ground truth answers per question 3 plausible (but likely incorrect) answers per question Automatic evaluation metric
+References  VQA: Visual Question Answering  Samples Dataset Usage Download dataset http://www.</description>
     </item>
     
     <item>

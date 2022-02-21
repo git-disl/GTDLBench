@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Datasets on GTDLBench</title>
     <link>/GTDLBench/datasets/</link>
     <description>Recent content in Datasets on GTDLBench</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/GTDLBench/datasets/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/GTDLBench/datasets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MNIST</title>
       <link>/GTDLBench/datasets/mnist_datasets/</link>
@@ -50,7 +46,7 @@ Dataset Statistics  Color: RGB Sample Size: 32x32  This dataset is just like the
       
       <guid>/GTDLBench/datasets/att_face_dataset/</guid>
       <description>The Database of Faces (AT&amp;amp;T) The Database of Faces
-Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset Size: 4.5 MB (compressed in .tar.z)  The original files are in PGM format, and can conveniently be viewed on UNIX &amp;trade; systems using the &amp;lsquo;xv&amp;rsquo; program. The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40 directories (one for each subject), which have names of the form sX, where X indicates the subject number (between 1 and 40).</description>
+Dataset Statistics  Color: Grey-scale Sample Size: 92x112 #Samples: 400 Dataset Size: 4.5 MB (compressed in .tar.z)  The original files are in PGM format, and can conveniently be viewed on UNIX (TM) systems using the &amp;lsquo;xv&amp;rsquo; program. The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40 directories (one for each subject), which have names of the form sX, where X indicates the subject number (between 1 and 40).</description>
     </item>
     
     <item>
@@ -107,7 +103,7 @@ Dataset Statistics  47 US sign types 7855 annotations on 6610 frames.</descripti
 Download Raw Dataset USPS Dataset
 USPS Testing Dataset
 Dataset Statistics  # of classes: 10 # of data: 7291 / 2007 (testing) # of features: 256  Samples Dataset Usage TensorFlow: https://github.com/darshanbagul/USPS_Digit_Classification
-USPS_Digit_Classification Requirements  tensorflow==1.0.1 matplotlib==1.5.1 cv2==2.4.13 numpy==1.13.0 cPickle==1.71  Implementation 1. Logistic Regression 2. Single layered Neural Networks 3. Convolutional Neural Networks  Results  Logistic Regression
+USPS_Digit_Classification Requirements  tensorflow==1.0.1matplotlib==1.5.1cv2==2.4.13numpy==1.13.0cPickle==1.71Implementation 1. Logistic Regression2. Single layered Neural Networks3. Convolutional Neural Networks Results   Logistic Regression
 Accuracy on USPS data - 36.</description>
     </item>
     
@@ -137,29 +133,6 @@ CelebFaces Attributes Dataset (CelebA) is a large-scale face attributes dataset 
     
     <item>
       <title></title>
-      <link>/GTDLBench/datasets/kinetics_datasets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/datasets/kinetics_datasets/</guid>
-      <description>Kinetics The Kinetics dataset
-Kinetics is a large-scale, high-quality dataset of YouTube video URLs which include a diverse range of human focused actions
-Statistics The dataset consists of approximately 300,000 video clips, and covers 400 human action classes with at least 400 video clips for each action class. Each clip lasts around 10s and is labeled with a single class. All of the clips have been through multiple rounds of human annotation, and each is taken from a unique YouTube video.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/GTDLBench/datasets/vqa_datasets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/GTDLBench/datasets/vqa_datasets/</guid>
-      <description>VISUAL QA The VQA dataset
-VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer.
-Dataset Statistics 265,016 images (COCO and abstract scenes) 1,105,904 questions 11,059,040 ground truth answers
-At least 3 questions (5.4 questions on average) per image 10 ground truth answers per question 3 plausible (but likely incorrect) answers per question Automatic evaluation metric</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>/GTDLBench/datasets/coil100_datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -177,6 +150,17 @@ This is a database of gray-scale images of 100 objects. The objects were placed 
       <description>Columbia Object Image Library (COIL-20) The COIL20 dataset
 This is a database of gray-scale images of 20 objects. The objects were placed on motorized turntable.The turn table was rotated through 360 degrees to vary object pose with respect to fixed camera.Images of objects were taken at pose interval of 5 degrees.This corresponds to 72 images per object.
 Dataset Statistics The database has two sets. The first set contains 720 unprocessed images of 10 objects.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/GTDLBench/datasets/kinetics_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/kinetics_datasets/</guid>
+      <description>Kinetics The Kinetics dataset
+Kinetics is a large-scale, high-quality dataset of YouTube video URLs which include a diverse range of human focused actions
+Statistics The dataset consists of approximately 300,000 video clips, and covers 400 human action classes with at least 400 video clips for each action class. Each clip lasts around 10s and is labeled with a single class. All of the clips have been through multiple rounds of human annotation, and each is taken from a unique YouTube video.</description>
     </item>
     
     <item>
@@ -220,6 +204,19 @@ Dataset Statistics Size 500 GB (Compressed) Number of Records: 9,011,219 images 
       <description>STL10 The STL-10 dataset
 The STL-10 dataset is an image recognition dataset for developing unsupervised feature learning, deep learning, self-taught learning algorithms. It is inspired by the CIFAR-10 dataset but with some modifications. In particular, each class has fewer labeled training examples than in CIFAR-10, but a very large set of unlabeled examples is provided to learn image models prior to supervised training.
 Dataset Statistics 10 classes: airplane, bird, car, cat, deer, dog, horse, monkey, ship, truck.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/GTDLBench/datasets/vqa_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/GTDLBench/datasets/vqa_datasets/</guid>
+      <description>VISUAL QA The VQA dataset
+VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer.
+Dataset Statistics 265,016 images (COCO and abstract scenes) 1,105,904 questions 11,059,040 ground truth answers
+At least 3 questions (5.4 questions on average) per image 10 ground truth answers per question 3 plausible (but likely incorrect) answers per question Automatic evaluation metric
+References  VQA: Visual Question Answering  Samples Dataset Usage Download dataset http://www.</description>
     </item>
     
   </channel>
