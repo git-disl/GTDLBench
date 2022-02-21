@@ -12,3 +12,6 @@ torch/*
 
 # lock
 *.lock
+
+# macos
+.DS_Store
