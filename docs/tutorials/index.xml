@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dataset Used on GTDLBench</title>
+    <link>/GTDLBench/tutorials/</link>
+    <description>Recent content in Dataset Used on GTDLBench</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/GTDLBench/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MNIST</title>
+      <link>/GTDLBench/tutorials/benchmarking_on_mnist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/GTDLBench/tutorials/benchmarking_on_mnist/</guid>
+      <description>Benchmarking on MNIST: The following mentioned model definition files are under the folder: models/mnist/ .&#xA;Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;&#xD;TensorFlow: TensorFlow uses a variant of LeNet and its network structure is shown as follows: TensorFlow default model Run TensorFlow with its default MNIST setting:&#xA;cd $DLBENCH_ROOT/models/mnist/tensorflow/&#xD;python mnist_deep.py&#xD;The Training Time, Testing Time and Accuracy will appear after completion.&#xA;Caffe: Similarly, the NN network structure of Caffe is shown as follows:</description>
+    </item>
+    <item>
+      <title>CIFAR-10</title>
+      <link>/GTDLBench/tutorials/benchmarking_on_cifar10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/GTDLBench/tutorials/benchmarking_on_cifar10/</guid>
+      <description>Benchmarking on CIFAR-10: The following mentioned model definition files are under the folder: models/cifar10/ .&#xA;Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot;&#xD;TensorFlow: Run TensorFlow with its default MNIST setting:&#xA;cd $DLBENCH_ROOT/models/cifar10/tensorflow/&#xD;python cifar10_train.py &amp;gt; train_log.txt 2&amp;gt;&amp;amp;1&#xD;After the completion of training, run the following command to test the tranined model:&#xA;python cifar10_eval.py &amp;gt; test_log.txt 2&amp;gt;&amp;amp;1&#xD;The Accuracy will appear after completion of cifar10_eval.py. And the Training Time and Testing Time can be extracted from the train_log.</description>
+    </item>
+    <item>
+      <title>CIFAR-100</title>
+      <link>/GTDLBench/tutorials/benchmarking_on_cifar100/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/GTDLBench/tutorials/benchmarking_on_cifar100/</guid>
+      <description>Benchmarking on CIFAR-100: The following mentioned model definition files are under the folder: models/cifar100/ .&#xA;Pre-setting: DLBENCH_ROOT=&amp;quot;path to the root directory of this benchmark&amp;quot; TensorFlow: Run TensorFlow with its default MNIST setting:&#xA;cd $DLBENCH_ROOT/models/cifar100/tensorflow/ python cifar100_train.py &amp;gt; train_log.txt 2&amp;gt;&amp;amp;1 After the completion of training, run the following command to test the tranined model:&#xA;python cifar100_eval.py &amp;gt; test_log.txt 2&amp;gt;&amp;amp;1 The Accuracy will appear after completion of cifar100_eval.py. And the Training Time and Testing Time can be extracted from the train_log.</description>
+    </item>
+  </channel>
+</rss>

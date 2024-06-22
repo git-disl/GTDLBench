@@ -5,15 +5,15 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2022-02-21T14:43:41 EST">
-<title>Dataset Used :: GTDLBench</title>
+<meta name="revised" content="2024-06-22T01:48:10 EDT">
+<title>CIFAR-10 :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
 <link href="/GTDLBench/css/nucleus.css" rel="stylesheet">
 <link href="/GTDLBench/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/GTDLBench/css/bootstrap.min.css">
-<script src="/GTDLBench/js/jquery-2.x.min.js"></script>
+<script src="/GTDLBench/js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript">
       var baseurl = "\/GTDLBench\/";
 </script>
@@ -32,7 +32,7 @@
 
     
   </head>
-  <body data-url="/GTDLBench/comparison/tutorials/">
+  <body data-url="/GTDLBench/tutorials/benchmarking_on_cifar10/">
     
       <header>
   <div class="logo">
@@ -245,43 +245,12 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/GTDLBench/comparison/" class="dd-item parent haschildren
+    <li data-nav-id="/GTDLBench/comparison/" class="dd-item haschildren
         ">
       <div>
-      <a href="/GTDLBench/comparison/">Comparison of DL Frameworks</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/GTDLBench/comparison/">Comparison of DL Frameworks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/GTDLBench/comparison/tutorials/" class="dd-item parent active haschildren
-        ">
-      <div>
-      <a href="/GTDLBench/comparison/tutorials/">Dataset Used</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/GTDLBench/comparison/tutorials/benchmarking_on_mnist/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/comparison/tutorials/benchmarking_on_mnist/">
-            MNIST
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/">
-            CIFAR-10
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/">
-            CIFAR-100
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
       <li data-nav-id="/GTDLBench/comparison/mnist_comparison/" class="dd-item">
         <div>
           <a href="/GTDLBench/comparison/mnist_comparison/">
@@ -293,6 +262,36 @@
         <div>
           <a href="/GTDLBench/comparison/cifar10_comparison/">
             Comparison on CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/GTDLBench/tutorials/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/GTDLBench/tutorials/">Dataset Used</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/GTDLBench/tutorials/benchmarking_on_mnist/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/tutorials/benchmarking_on_mnist/">
+            MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/GTDLBench/tutorials/benchmarking_on_cifar10/" class="dd-item active">
+        <div>
+          <a href="/GTDLBench/tutorials/benchmarking_on_cifar10/">
+            CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/GTDLBench/tutorials/benchmarking_on_cifar100/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/tutorials/benchmarking_on_cifar100/">
+            CIFAR-100
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -323,16 +322,12 @@
     <option value="/frameworks/" >
    Frameworks</option>
     <option value="/comparison/" >
-   Comparison of DL Frameworks</option> 
-    <option value="/comparison/tutorials/"  selected>
-  - 
+   Comparison of DL Frameworks</option>
+    <option value="/tutorials/" >
    Dataset Used</option> 
-      <option value="/comparison/tutorials/benchmarking_on_mnist/" >-- MNIST</option>
-      <option value="/comparison/tutorials/benchmarking_on_cifar10/" >-- CIFAR-10</option>
-      <option value="/comparison/tutorials/benchmarking_on_cifar100/" >-- CIFAR-100</option>
-  
-      <option value="/comparison/mnist_comparison/" >- Comparison on MNIST</option>
-      <option value="/comparison/cifar10_comparison/" >- Comparison on CIFAR-10</option>
+      <option value="/tutorials/benchmarking_on_mnist/" >- MNIST</option>
+      <option value="/tutorials/benchmarking_on_cifar10/"  selected>- CIFAR-10</option>
+      <option value="/tutorials/benchmarking_on_cifar100/" >- CIFAR-100</option>
   
     <option value="/info/" >
    About</option>
@@ -358,42 +353,50 @@
       </div>
     
 
-    <h1>Dataset Used</h1>
+    <h1>CIFAR-10</h1>
     
     
     
-
-<h1 id="dataset-used">Dataset Used</h1>
-<h2 id="configuration">Configuration</h2>
-<pre><code>bash pre-install.sh
+    <h1 id="benchmarking-on-cifar-10">Benchmarking on CIFAR-10:</h1>
+<p>The following mentioned model definition files are under the folder: <em>models/cifar10/</em> .</p>
+<h2 id="pre-setting">Pre-setting:</h2>
+<pre><code>DLBENCH_ROOT=&quot;path to the root directory of this benchmark&quot;
 </code></pre>
-<h3 id="end-to-end-benchmarking">End-to-end benchmarking</h3>
-<p>For end-to-end benchmarking, a series of deep learning frameworks are required. Please refer to the <a href="/GTDLBench/frameworks/">Frameworks</a>
-for framework information and installation.</p>
-<h3 id="micro-benchmark">Micro Benchmark</h3>
-<p>The micro benchmark is based on the DeepBench (By Baidu Research), primarily covering the deep learning components, such as
-Dense Matrix Multiplies, Convolutions, Recurrent Layers, and All Reduce. Please refer to the <em>microbench</em> folder for more information.</p>
-<h2 id="workloads">Workloads</h2>
-<h3 id="mnist">MNIST</h3>
-<h3 id="cifar-10">CIFAR-10</h3>
-<h3 id="cifar-100">CIFAR-100</h3>
-<h2 id="system-configuration">System Configuration:</h2>
-<ul>
-<li>Operating System: Ubuntu 16.04</li>
-<li>Memory: 10 GB</li>
-<li>GPU: Nvidia GTX 1080 Ti (11GB)</li>
-<li>CPU: E5-1620 (3.6GHz)</li>
-<li>Hard Drive: 256 GB</li>
-</ul>
-
+<h2 id="tensorflow">TensorFlow:</h2>
+<p>Run TensorFlow with its default MNIST setting:</p>
+<pre><code>cd $DLBENCH_ROOT/models/cifar10/tensorflow/
+python cifar10_train.py &gt; train_log.txt 2&gt;&amp;1
+</code></pre>
+<p>After the completion of training, run the following command to test the tranined model:</p>
+<pre><code>python cifar10_eval.py &gt; test_log.txt 2&gt;&amp;1
+</code></pre>
+<p>The <em>Accuracy</em> will appear after completion of <em>cifar10_eval.py</em>. And the <em>Training Time</em> and <em>Testing Time</em>
+can be extracted from the <em>train_log.txt</em> and <em>test_log.txt</em>.</p>
+<h2 id="caffe">Caffe:</h2>
+<p>Similarly, the NN network structure of Caffe is shown as follows:</p>
+<p>Run Caffe with its default setting:</p>
+<pre><code>cd $DLBENCH_ROOT/models/cifar10/caffe
+./train_quick.sh &gt; log.txt 2&gt;&amp;1
+</code></pre>
+<p>The <em>Training Time</em>, <em>Testing Time</em> and <em>Accuracy</em> can be extracted from the <em>log.txt</em> file.</p>
+<h2 id="torch">Torch:</h2>
+<pre><code>cd $DLBENCH_ROOT/models/cifar10/torch
+</code></pre>
+<p>Run on CPU:</p>
+<pre><code>th train-on-cifar-10.lua
+</code></pre>
+<h2 id="theano">Theano:</h2>
+<p><em>Note</em>: The implementation for Theano on CIFAR-10 derived from <a href="https://github.com/benanne/theano-tutorial">Reslab Theano tutorial (10 February 2015)</a></p>
+<pre><code>cd $DLBENCH_ROOT/models/cifar10/theano
+THEANO_FLAGS=device=cpu python convolutional_mlp.py</code></pre>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/GTDLBench/comparison/" title="Comparison of DL Frameworks"> <i class="fa fa-chevron-left"></i><label>Comparison of DL Frameworks</label></a>
-    <a class="nav nav-next" href="/GTDLBench/comparison/tutorials/benchmarking_on_mnist/" title="MNIST" style="margin-right: 0px;"><label>MNIST</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/GTDLBench/tutorials/benchmarking_on_mnist/" title="MNIST"> <i class="fa fa-chevron-left"></i><label>MNIST</label></a>
+    <a class="nav nav-next" href="/GTDLBench/tutorials/benchmarking_on_cifar100/" title="CIFAR-100" style="margin-right: 0px;"><label>CIFAR-100</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -410,7 +413,7 @@ Dense Matrix Multiplies, Convolutions, Recurrent Layers, and All Reduce. Please 
 
     
     <div class="github-link">
-      <a href="https://github.com/git-disl/GTDLBench/comparison/tutorials/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/git-disl/GTDLBench/tutorials/benchmarking_on_cifar10.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     
@@ -421,7 +424,7 @@ Dense Matrix Multiplies, Convolutions, Recurrent Layers, and All Reduce. Please 
     <p>
 	&copy; <a href="https://www.cc.gatech.edu/projects/disl/">DiSL</a>@ Georgia Institute of Technology
 </p>
-<iframe width="280" height="110" src="https://datastudio.google.com/embed/reporting/bf85f9b1-8f2d-415e-9302-69e48d56ac25/page/tWDGB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="280" height="110" src="https://lookerstudio.google.com/embed/reporting/ec51fe77-ffe9-4841-ad80-02b26edd6292/page/tWDGB" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 	</div>
 </footer>
 

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2022-02-21T14:43:41 EST">
+<meta name="revised" content="2024-06-22T01:48:10 EDT">
 <title>Faces (AT&amp;T) :: GTDLBench</title>
 <link rel="shortcut icon" href="/GTDLBench/images/favicon.ico" type="image/x-icon" />
 <link href="/GTDLBench/css/font-awesome.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 <link href="/GTDLBench/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/GTDLBench/css/bootstrap.min.css">
-<script src="/GTDLBench/js/jquery-2.x.min.js"></script>
+<script src="/GTDLBench/js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript">
       var baseurl = "\/GTDLBench\/";
 </script>
@@ -252,35 +252,6 @@
       <a href="/GTDLBench/comparison/">Comparison of DL Frameworks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/GTDLBench/comparison/tutorials/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/GTDLBench/comparison/tutorials/">Dataset Used</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/GTDLBench/comparison/tutorials/benchmarking_on_mnist/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/comparison/tutorials/benchmarking_on_mnist/">
-            MNIST
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/">
-            CIFAR-10
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/" class="dd-item">
-        <div>
-          <a href="/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/">
-            CIFAR-100
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
       <li data-nav-id="/GTDLBench/comparison/mnist_comparison/" class="dd-item">
         <div>
           <a href="/GTDLBench/comparison/mnist_comparison/">
@@ -292,6 +263,35 @@
         <div>
           <a href="/GTDLBench/comparison/cifar10_comparison/">
             Comparison on CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/GTDLBench/tutorials/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/GTDLBench/tutorials/">Dataset Used</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/GTDLBench/tutorials/benchmarking_on_mnist/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/tutorials/benchmarking_on_mnist/">
+            MNIST
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/GTDLBench/tutorials/benchmarking_on_cifar10/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/tutorials/benchmarking_on_cifar10/">
+            CIFAR-10
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/GTDLBench/tutorials/benchmarking_on_cifar100/" class="dd-item">
+        <div>
+          <a href="/GTDLBench/tutorials/benchmarking_on_cifar100/">
+            CIFAR-100
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -343,6 +343,8 @@
    Frameworks</option>
     <option value="/comparison/" >
    Comparison of DL Frameworks</option>
+    <option value="/tutorials/" >
+   Dataset Used</option>
     <option value="/info/" >
    About</option>
 
@@ -381,18 +383,18 @@
 <li>Dataset Size: 4.5 MB (compressed in .tar.z)</li>
 </ol>
 <p>The original files are in PGM format, and can conveniently be viewed on UNIX (TM) systems using the &lsquo;xv&rsquo; program.
-The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40 
-directories (one for each subject), which have names of the form sX, where X indicates the subject number 
+The size of each image is 92x112 pixels, with 256 grey levels per pixel. The images are organised in 40
+directories (one for each subject), which have names of the form sX, where X indicates the subject number
 (between 1 and 40). In each of these directories, there are ten different images of that subject, which
 have names of the form Y.pgm, where Y is the image number for that subject (between 1 and 10).</p>
-<p>The AT&amp;T face dataset, &ldquo;(formerly &lsquo;The ORL Database of Faces&rsquo;), contains a set of face images taken 
-between April 1992 and April 1994 at the lab. The database was used in the context of a face recognition 
-project carried out in collaboration with the Speech, Vision and Robotics Group of the Cambridge University 
+<p>The AT&amp;T face dataset, &ldquo;(formerly &lsquo;The ORL Database of Faces&rsquo;), contains a set of face images taken
+between April 1992 and April 1994 at the lab. The database was used in the context of a face recognition
+project carried out in collaboration with the Speech, Vision and Robotics Group of the Cambridge University
 Engineering Department.&rdquo;</p>
-<p>&ldquo;There are 10 different images of each of 40 distinct subjects. For some subjects, the images were taken at 
-different times, varying the lighting, facial expressions (open / closed eyes, smiling / not smiling) and 
-facial details (glasses / no glasses). All the images were taken against a dark homogeneous background with 
-the subjects in an upright, frontal position (with tolerance for some side movement). A preview image of the 
+<p>&ldquo;There are 10 different images of each of 40 distinct subjects. For some subjects, the images were taken at
+different times, varying the lighting, facial expressions (open / closed eyes, smiling / not smiling) and
+facial details (glasses / no glasses). All the images were taken against a dark homogeneous background with
+the subjects in an upright, frontal position (with tolerance for some side movement). A preview image of the
 Database of Faces is available.&rdquo;</p>
 <h3 id="full-dataset">Full Dataset</h3>
 <p><img src="/GTDLBench/figures/faces.gif" alt="ATT Sample"></p>
@@ -451,7 +453,7 @@ jupyter nbconvert --execute Siamese-networks-medium.ipynb</code></pre>
     <p>
 	&copy; <a href="https://www.cc.gatech.edu/projects/disl/">DiSL</a>@ Georgia Institute of Technology
 </p>
-<iframe width="280" height="110" src="https://datastudio.google.com/embed/reporting/bf85f9b1-8f2d-415e-9302-69e48d56ac25/page/tWDGB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="280" height="110" src="https://lookerstudio.google.com/embed/reporting/ec51fe77-ffe9-4841-ad80-02b26edd6292/page/tWDGB" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 	</div>
 </footer>
 

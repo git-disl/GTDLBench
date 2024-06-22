@@ -4,68 +4,43 @@
     <title>Frameworks on GTDLBench</title>
     <link>/GTDLBench/frameworks/</link>
     <description>Recent content in Frameworks on GTDLBench</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/GTDLBench/frameworks/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/GTDLBench/frameworks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TensorFlow</title>
       <link>/GTDLBench/frameworks/tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/GTDLBench/frameworks/tensorflow/</guid>
-      <description>TensorFlow is a popular open-source machine learning library developed by Google. It employs dataflow programming, and it is widely used for both research and production.
-Install cd $DLBENCH_ROOT bash tensorflow-install.sh  This script will install TensorFlow through Miniconda. Please execute the following comannd to activate TensorFlow environment:
-source activate tensorflow  Another recommended installation method is to install TensorFlow by compiling source codes.
-The table below shows the statistics of TensorFlow.</description>
+      <description>TensorFlow is a popular open-source machine learning library developed by Google. It employs dataflow programming, and it is widely used for both research and production.&#xA;Install cd $DLBENCH_ROOT bash tensorflow-install.sh This script will install TensorFlow through Miniconda. Please execute the following comannd to activate TensorFlow environment:&#xA;source activate tensorflow Another recommended installation method is to install TensorFlow by compiling source codes.&#xA;The table below shows the statistics of TensorFlow.&#xA;LOC 0.</description>
     </item>
-    
     <item>
       <title>Caffe</title>
       <link>/GTDLBench/frameworks/caffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/GTDLBench/frameworks/caffe/</guid>
-      <description>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (BAIR) and by community contributors. It is designed to be fast, expressive and extensible.
-Install cd $DLBENCH_ROOT bash caffe-install.sh  This script will install Caffe by compling it source codes.
-The statistical information of Caffe is shown as follows:
- 678 text files. 677 unique files. 282 files ignored.  CLOC v 1.60 T=2.68 s (162.6 files/s, 36000.</description>
+      <description>Caffe is a popular open-source deep learning library developed by Berkeley AI Research (BAIR) and by community contributors. It is designed to be fast, expressive and extensible.&#xA;Install cd $DLBENCH_ROOT bash caffe-install.sh This script will install Caffe by compling it source codes.&#xA;The statistical information of Caffe is shown as follows:&#xA;678 text files. 677 unique files. 282 files ignored. CLOC v 1.60 T=2.68 s (162.6 files/s, 36000.4 lines/s)&#xA;Language files blank comment code C++ 188 4726 4888 41803 C/C++ Header 106 3341 7438 18325 Python 38 1431 3026 5232 CMake 33 435 476 1957 MATLAB 22 94 205 627 Bourne Shell 40 166 159 589 make 1 92 107 500 CSS 3 71 8 359 HTML 2 19 8 173 YAML 2 11 20 43 SUM: 435 10386 16335 69608 </description>
     </item>
-    
     <item>
       <title>Torch</title>
       <link>/GTDLBench/frameworks/torch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/GTDLBench/frameworks/torch/</guid>
-      <description>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs. It is written in a scripting language, LuaJIT.
-Install cd $DLBENCH_ROOT bash torch-install.sh  This script will install Torch by compiling its source codes. And its environment will be automatically configured.
-The table below shows the statistics of Torch.
- 166 text files 166 unique files 66 files ignored  CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)</description>
+      <description>Torch is a scientific computing framework, supporting machine learning algorithms and GPUs. It is written in a scripting language, LuaJIT.&#xA;Install cd $DLBENCH_ROOT bash torch-install.sh This script will install Torch by compiling its source codes. And its environment will be automatically configured.&#xA;The table below shows the statistics of Torch.&#xA;166 text files 166 unique files 66 files ignored CLOC v 1.60 T=0.86 s (159.7 files/s, 41829.2 lines/s)&#xA;Language files blank comment code C 50 2668 955 17270 Lua 21 1227 424 8701 C/C++ Header 51 465 281 2287 CMake 14 197 186 1409 YAML 2 0 0 83 </description>
     </item>
-    
     <item>
       <title>Theano</title>
       <link>/GTDLBench/frameworks/theano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/GTDLBench/frameworks/theano/</guid>
-      <description>Theano is a popular Python machine learning library, allowing users to define, optimize, and evaluate mathematical expressions. It has been powering intensive scientific workload, including deep learning since 2007.
-Install cd $DLBENCH_ROOT bash theano-install.sh  This script will install Theano through Miniconda. Please execute the following comannd to activate Theano environment:
-source activate theano  Another recommended installation method is to install Theano by compiling source codes.
-The table below shows the statistics of Theano.</description>
+      <description>Theano is a popular Python machine learning library, allowing users to define, optimize, and evaluate mathematical expressions. It has been powering intensive scientific workload, including deep learning since 2007.&#xA;Install cd $DLBENCH_ROOT bash theano-install.sh This script will install Theano through Miniconda. Please execute the following comannd to activate Theano environment:&#xA;source activate theano Another recommended installation method is to install Theano by compiling source codes.&#xA;The table below shows the statistics of Theano.</description>
     </item>
-    
     <item>
       <title></title>
       <link>/GTDLBench/frameworks/mxnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/GTDLBench/frameworks/mxnet/</guid>
-      <description>2116 text files.
-2088 unique files.
-705 files ignored.
-cloc v 1.60 T=4.60 s (317.1 files/s, 71521.2 lines/s)
-   Language files blank comment code     Python 563 16447 35338 70836   C/C++ Header 258 6874 16657 58866   C++ 193 5318 6582 35875   Perl 79 3874 4689 21408   Scala 130 2683 5911 15865   Bourne Shell 107 820 2274 3014   Java 41 609 954 2175   Maven 17 67 13 1535   CMake 14 270 378 1489   CSS 1 237 47 1192   Javascript 10 121 168 1165   make 10 179 199 772   MATLAB 6 116 326 724   Cython 6 105 118 591   HTML 4 26 18 359   DOS Batch 4 85 81 270   YAML 8 51 60 261   C 1 20 28 201   XML 4 32 32 192   Bourne Again Shell 1 7 21 19   SUM: 1457 37941 73894 216809    </description>
+      <description>2116 text files.&#xA;2088 unique files.&#xA;705 files ignored.&#xA;cloc v 1.60 T=4.60 s (317.1 files/s, 71521.2 lines/s)&#xA;Language files blank comment code Python 563 16447 35338 70836 C/C++ Header 258 6874 16657 58866 C++ 193 5318 6582 35875 Perl 79 3874 4689 21408 Scala 130 2683 5911 15865 Bourne Shell 107 820 2274 3014 Java 41 609 954 2175 Maven 17 67 13 1535 CMake 14 270 378 1489 CSS 1 237 47 1192 Javascript 10 121 168 1165 make 10 179 199 772 MATLAB 6 116 326 724 Cython 6 105 118 591 HTML 4 26 18 359 DOS Batch 4 85 81 270 YAML 8 51 60 261 C 1 20 28 201 XML 4 32 32 192 Bourne Again Shell 1 7 21 19 SUM: 1457 37941 73894 216809 </description>
     </item>
-    
   </channel>
 </rss>

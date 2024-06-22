@@ -4,7 +4,8 @@
     <title>Categories on GTDLBench</title>
     <link>/GTDLBench/categories/</link>
     <description>Recent content in Categories on GTDLBench</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/GTDLBench/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/GTDLBench/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,15 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/GTDLBench/comparison/tutorials/</loc>
+    <loc>/GTDLBench/tutorials/benchmarking_on_mnist/</loc>
   </url><url>
-    <loc>/GTDLBench/comparison/tutorials/benchmarking_on_mnist/</loc>
-  </url><url>
-    <loc>/GTDLBench/comparison/tutorials/benchmarking_on_cifar10/</loc>
+    <loc>/GTDLBench/tutorials/benchmarking_on_cifar10/</loc>
   </url><url>
     <loc>/GTDLBench/datasets/</loc>
   </url><url>
-    <loc>/GTDLBench/comparison/tutorials/benchmarking_on_cifar100/</loc>
+    <loc>/GTDLBench/tutorials/benchmarking_on_cifar100/</loc>
   </url><url>
     <loc>/GTDLBench/frameworks/</loc>
   </url><url>
@@ -24,13 +22,15 @@
   </url><url>
     <loc>/GTDLBench/frameworks/tensorflow/</loc>
   </url><url>
-    <loc>/GTDLBench/info/</loc>
-  </url><url>
     <loc>/GTDLBench/frameworks/caffe/</loc>
   </url><url>
     <loc>/GTDLBench/datasets/cifar-100_datasets/</loc>
   </url><url>
     <loc>/GTDLBench/comparison/cifar10_comparison/</loc>
+  </url><url>
+    <loc>/GTDLBench/tutorials/</loc>
+  </url><url>
+    <loc>/GTDLBench/info/</loc>
   </url><url>
     <loc>/GTDLBench/datasets/att_face_dataset/</loc>
   </url><url>
